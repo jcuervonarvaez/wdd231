@@ -33,7 +33,6 @@
   }
 
   main {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -63,5 +62,9 @@
   .city figure img {
     width: 300px;
     height: auto;
+  }
+
+  .course-grid ul {
+    grid-template-columns: 1fr 1fr;
   }
 }

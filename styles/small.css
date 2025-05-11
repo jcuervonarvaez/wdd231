@@ -61,6 +61,7 @@ header button {
   border: solid 1px var(--dark-blue);
   border-radius: 5px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -171,4 +172,56 @@ h1 {
 .city figure img {
   width: 200px;
   height: auto;
+}
+
+.course-work ul {
+  padding-right: 10px;
+}
+
+.course-work ul li {
+  padding: 20px 0 0 0;
+}
+
+.courses-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #000;
+}
+
+.courses-filter .filter-btn {
+  flex: 1;
+  margin: 0 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--dark-purple);
+  border: solid 1px var(--dark-purple);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.courses-filter .filter-btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+}
+
+.course-grid ul {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.course-grid ul li {
+  background-color: var(--light-blue);
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.course-grid ul li.active {
+  background-color: var(--light-green);
 }

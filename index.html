@@ -22,6 +22,7 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
@@ -58,10 +59,13 @@
                 <section class="card course-work">
                     <h2>Course Work</h2>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Week 01 – Introduction, Specificity, Testing</li>
+                        <li>Week 02 – Social Media, JSON, Async/Await, Fetch</li>
+                        <li>Week 03 – Accessibility, ES Modules, APIs</li>
+                        <li>Week 04 – CSS Animations, Modals, Form Design</li>
+                        <li>Week 05 – Careers, Profile, Performance</li>
+                        <li>Week 06 – Individual Website Project</li>
+                        <li>Week 07 – Exam</li>
                     </ul>
                 </section>
                 <section class="card city">
@@ -77,19 +81,14 @@
                 </section>
                 <section class="card dynamic-courses">
                     <h2>Web and Computer Programing Certificate</h2>
-                    <div>
-                        <button data-group="ALL">All</button>
-                        <button data-group="CSE">CSE</button>
-                        <button data-group="WDD">WDD</button>
+                    <div class="courses-filter">
+                        <button class="filter-btn" data-group="ALL">All</button>
+                        <button class="filter-btn" data-group="CSE">CSE</button>
+                        <button class="filter-btn" data-group="WDD">WDD</button>
                     </div>
-                    <div>
-                        <ul>
-                            <li data-parent="CSE">CSE 110</li>
-                            <li data-parent="WDD">WDD 130</li>
-                            <li data-parent="CSE">CSE 111</li>
-                            <li data-parent="CSE">CSE 210</li>
-                            <li data-parent="WDD">WDD 131</li>
-                            <li data-parent="WDD">WDD 231</li>
+                    <p id="total-credits"></p>
+                    <div class="course-grid">
+                        <ul id="list-courses">
                         </ul>
                     </div>
                 </section>
