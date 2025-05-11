@@ -21,22 +21,28 @@
 
 
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
-    <div class="continer">
+    <div class="container">
         <header>
-            <div>
+            <div class="header-profile">
                 <img class="profile-picture" src="images/profile-picture.webp"
                     alt="Profile picture of Julian A. Cuervo, He dress a blue shirt, a dark blue tie and glasses. He is smiling and has short hair."
                     title="Julian A. Cuervo profile picture" width="288" height="432">
                 <span>
-
                     Julian A. Cuervo Narvaez
                 </span>
+                <button title="Menu" type="button" id="menu-button">
+                    <span class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
             </div>
-
-            <nav>
+            <nav id="menu" class="hidden-mobile">
                 <a href="/">Home</a>
                 <a href="/chamber">Chamber</a>
                 <a href="/final-project">Final</a>
@@ -48,51 +54,55 @@
         </header>
         <main>
             <h1>HOME</h1>
-            <section>
-                <h2>Course Work</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Bogot&aacute;, Colombia</h2>
-                <figure>
-                    <img src="images/bogota.webp"
-                        alt="Bogot&aacute;, Colombia, a city with a lot of buildings and green areas."
-                        title="Bogot&aacute;, Colombia" width="288" height="432">
-                    <figcaption>
-                        Bogot&aacute;, Colombia
-                    </figcaption>
-                </figure>
-            </section>
-            <section>
-                <h2>Web and Computer Programing Certificate</h2>
-                <div>
-                    <button data-group="ALL">All</button>
-                    <button data-group="CSE">CSE</button>
-                    <button data-group="WDD">WDD</button>
-                </div>
-                <div>
+            <div class="content">
+                <section class="card course-work">
+                    <h2>Course Work</h2>
                     <ul>
-                        <li data-parent="CSE">CSE 110</li>
-                        <li data-parent="WDD">WDD 130</li>
-                        <li data-parent="CSE">CSE 111</li>
-                        <li data-parent="CSE">CSE 210</li>
-                        <li data-parent="WDD">WDD 131</li>
-                        <li data-parent="WDD">WDD 231</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
-                </div>
-            </section>
+                </section>
+                <section class="card city">
+                    <h2>Bogot&aacute;, Colombia</h2>
+                    <figure>
+                        <img src="images/bogota.webp"
+                            alt="Bogot&aacute;, Colombia, a city with a lot of buildings and green areas."
+                            title="Bogot&aacute;, Colombia" width="853" height="853">
+                        <figcaption>
+                            Plaza La Santamaría
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="card dynamic-courses">
+                    <h2>Web and Computer Programing Certificate</h2>
+                    <div>
+                        <button data-group="ALL">All</button>
+                        <button data-group="CSE">CSE</button>
+                        <button data-group="WDD">WDD</button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li data-parent="CSE">CSE 110</li>
+                            <li data-parent="WDD">WDD 130</li>
+                            <li data-parent="CSE">CSE 111</li>
+                            <li data-parent="CSE">CSE 210</li>
+                            <li data-parent="WDD">WDD 131</li>
+                            <li data-parent="WDD">WDD 231</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
         </main>
         <footer>
-            <div>
+            <div class="copy-right">
                 <p>
                     &copy;&nbsp;
                     <span id="currentYear"></span>
-                    🚀 Julian A. Cuervo 🚀 Colombia
+                    - Julian A. Cuervo 🚀 Colombia
                 </p>
                 <img src="images/colombia-flag.webp" alt="Colombia's flag with yellow, blue and red colors in the flag"
                     title="Colombia's flag" width="275" height="183">

@@ -1,0 +1,67 @@
+/* large devices layout */
+@media screen and (min-width: 1024px) {
+  #menu-button {
+    display: none;
+  }
+
+  header nav {
+    flex-direction: row;
+  }
+
+  header nav.hidden-mobile {
+    display: flex;
+  }
+
+  header nav a {
+    font-size: 1rem;
+    background-color: #000;
+    text-align: center;
+    border-bottom: solid 1px #000;
+  }
+
+  .header-profile {
+    justify-content: center;
+  }
+
+  .header-profile img {
+    width: 100px;
+  }
+
+  header span {
+    flex: initial;
+    font-size: 2rem;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content {
+    display: grid;
+    gap: 15px;
+    grid-template: auto auto / 2fr 1fr;
+  }
+
+  .course-work {
+    grid-column: 1 / 2;
+  }
+
+  .city {
+    grid-column: 2 / 3;
+  }
+
+  .dynamic-courses {
+    grid-column: 1 / 3;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .city figure img {
+    width: 300px;
+    height: auto;
+  }
+}
