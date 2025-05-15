@@ -3,7 +3,7 @@
 ## **Site Name:** Valpommerce - Chamber of Commerce
 
 **Location:** Valparaiso Region, Chile
-![Valparaiso Region, Chile](./images/valparaiso.jpg "Valparaiso Region, Chile")
+![Valparaiso Region, Chile](https://jcuervonarvaez.github.io/wdd231/chamber/images/valparaiso.jpg "Valparaiso Region, Chile")
 
 ## **Site Purpose:**
 The purpose of this website is to support and empower small businesses in the Valparaíso region by helping them build an active online community. Many small enterprises lack the tools or knowledge to establish a digital presence, and this platform aims to connect local businesses with each other and with the broader community. Through promotion, events, and visibility tools, the Chamber of Commerce seeks to increase engagement and boost sales across the region.
@@ -40,7 +40,7 @@ Small local shops, new artisans and creative businesses in Valparaíso looking f
 
 ### Color Palette
 
-![Color Palette](./images/colorkit.png "Color Palette")
+![Color Palette](https://jcuervonarvaez.github.io/wdd231/chamber/images/colorkit.png "Color Palette")
 
 - **Primary Color:** `#1a69b1` <span style="background-color:#1a69b1 ; color: #1a69b1; font-weight: 700;"> Color </span>
 - **Secondary Color:** `#173277` <span style="background-color:#173277 ; color: #173277; font-weight: 700;"> Color </span>
