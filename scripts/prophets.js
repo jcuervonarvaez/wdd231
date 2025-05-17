@@ -26,7 +26,11 @@ const displayProphets = (prophets) => {
     fullName.textContent = `${prophet.name} ${prophet.lastname}`;
     birthPlace.innerHTML = `🏘️ <b>Place of Birth:</b> ${prophet.birthplace}`;
     birthDate.innerHTML = `🥳<b>Date of Birth:</b> ${prophet.birthdate}`;
-    deathDate.innerHTML = `🪦<b>Date of Death:</b> ${prophet.death}`;
+    if (prophet.death) {
+      deathDate.innerHTML = `🪦<b>Date of Death:</b> ${prophet.death}`;
+    } else {
+        deathDate.innerHTML = `<b>Alive ❤️</b>`;
+    }
 
     portrait.setAttribute("src", prophet.imageurl);
     portrait.setAttribute(
