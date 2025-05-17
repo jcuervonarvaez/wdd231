@@ -6,32 +6,46 @@
 ![Valparaiso Region, Chile](https://jcuervonarvaez.github.io/wdd231/chamber/images/valparaiso.jpg "Valparaiso Region, Chile")
 
 ## **Site Purpose:**
-The purpose of this website is to support and empower small businesses in the Valparaíso region by helping them build an active online community. Many small enterprises lack the tools or knowledge to establish a digital presence, and this platform aims to connect local businesses with each other and with the broader community. Through promotion, events, and visibility tools, the Chamber of Commerce seeks to increase engagement and boost sales across the region.
+
+The purpose of this website is to establish a digital presence for small businesses in the Valparaíso region, helping them connect with communities — both with other bussiness owners and with customers interested in their services. The platform will allow for event announcements, the creation of a local business directory, and easier connections between people, with the goal of attracting new clients, increasing sales, and bringing these growing businesses into the digital age."
 
 ### **Target Market:**
+
 Small local shops, new artisans and creative businesses in Valparaíso looking for online help and community support.
 
 ### **Site Goals:**
+
 - [1] **Boost the digital presence of small businesses** by helping them create and maintain websites, active social media accounts, and online sales platforms.
 
 - [2] **Encourage local connection and collaboration** by inviting businesses to join a supportive community that participates in Chamber of Commerce events, special promotions, and networking opportunities.
 
 - [3] **Provide training and digital tools** to help businesses grow, develop new skills, and adapt successfully to online markets.
 
-**User Personas:**
+### **User Personas:**
+#### Small Business Owner
+Pedro is a 72-year-old shoemaker who has run his small local repair shop in Valparaíso for over 50 years. His business is known for its high-quality work and loyal customer base, all built through word of mouth. Although he has heard that promoting his services online could bring in more clients, he has no experience with digital tools and feels overwhelmed by technology. Pedro wants to adapt to the modern world but needs simple, clear guidance to get started without changing the essence of his traditional craft.
+
+#### Young owner of a small business.
+Benja is a 22-year-old university student at the Universidad Técnica Federico Santa María. To help pay for his education, he runs a small art business where he sells custom paintings, caricatures, and realistic drawings. Although talented, Benja struggles to reach a broader audience and connect with people interested in his work. He is eager to improve his business and join a community of young entrepreneurs, but lacks the network and knowledge to promote his services effectively online.
+
+#### New residents or business prospects.
+María is a 38-year-old school teacher from Quilpué who is passionate about finding unique, high-quality furniture. She dislikes mass-produced pieces from big retailers like París, Jumbo, or Falabella, and instead wants to support local artisans. However, she doesn’t know where to find local businesses that offer the kind of personalized furniture she’s looking for. María is searching for a platform where she can easily discover and connect with local creators who align with her taste and values.
 
 **Scenarios:**
 
 ---
+
 # Page Specifications
-- ## 📄 Home 
+
+- ## 📄 Home
   The home page will contain some attention grabbing information along with community information, weather, calls to action, and business spotlights.
 - ## 📄 Discover
   The discover page locale history, current demographics, and current events. An image montage will orient visitors to the area and interesting area sites, etc.
 - ## 📄 Directory
   This page provides a list of local business and other organizations that belong to the chamber of commerce.
-- ## 📄 Join 
+- ## 📄 Join
   This page contains information about the benefit of joining the chamber and a membership application form. There are three membership level options of non-profit, silver, and gold. The different levels have different perks including directory listings, publications, trainings, social media work, luncheons, sponsorships, advertising, etc.
+
 ---
 
 # DESIGN
@@ -42,11 +56,11 @@ Small local shops, new artisans and creative businesses in Valparaíso looking f
 
 ![Color Palette](https://jcuervonarvaez.github.io/wdd231/chamber/images/colorkit.png "Color Palette")
 
-- **Primary Color:** `#1a69b1` <span style="background-color:#1a69b1 ; color: #1a69b1; font-weight: 700;"> Color </span>
-- **Secondary Color:** `#173277` <span style="background-color:#173277 ; color: #173277; font-weight: 700;"> Color </span>
-- **White Color:** `#ffffff` <span style="background-color:#ffffff ; color: #ffffff; font-weight: 700;"> Color </span>
-- **Black Color:** `#0a0803` <span style="background-color:#0a0803 ; color: #0a0803; font-weight: 700;"> Color </span>
-- **Accent1 Color:** `#bd2c49` <span style="background-color: #bd2c49; color: #bd2c49; font-weight: 700;"> Color </span>
+- **Primary Color:** `#1a69b1`
+- **Secondary Color:** `#173277`
+- **White Color:** `#ffffff`
+- **Black Color:** `#0a0803`
+- **Accent1 Color:** `#bd2c49`
 
 ### Fonts
 
