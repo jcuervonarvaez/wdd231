@@ -50,7 +50,10 @@ María is a 38-year-old school teacher from Quilpué who is passionate about fin
 
 # DESIGN
 
-- Logo => **[ Pending ]**
+## Logos
+- ![Logo site light](https://jcuervonarvaez.github.io/wdd231/chamber/images/logo-light.png "Logo site light")
+- ![Logo site dark](https://jcuervonarvaez.github.io/wdd231/chamber/images/logo-dark.png "Logo site dark")
+- ![Logo site secondary](https://jcuervonarvaez.github.io/wdd231/chamber/images/logo-secondary.png "Logo site Secondary")
 
 ### Color Palette
 
@@ -63,10 +66,8 @@ María is a 38-year-old school teacher from Quilpué who is passionate about fin
 - **Accent1 Color:** `#bd2c49`
 
 ### Fonts
-
-- **Font Family:** `_________`
-- Heading font
-- Text font
+- **Heading font:** Roboto
+- **Text font:** Source Sans 3
 
 ---
 
