@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #1a69b1;
+  --secondary-color: #173277;
+  --white-color: #ffffff;
+  --black-color: #0a0803;
+  --accent-color: #bd2c49;
+
+  --heading-font: "Roboto", sans-serif;
+  --text-font: "Source Sans 3", sans-serif;
+}
+
+* {
+  font-family: var(--text-font);
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+header {
+  /* border-bottom: 0.1rem solid var(--secondary-color); */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo button */
+header .logo-container {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+header .logo-container img {
+  width: 45px;
+  height: auto;
+}
+
+header .logo-container .site-name {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  padding: 1rem 0;
+  flex-grow: 1;
+  color: var(--secondary-color);
+}
+
+/* Hamburger button */
+header .logo-container button {
+  display: flex;
+  justify-content: center;
+  justify-self: end;
+  margin: 0 1.6rem;
+  padding: 0.2rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .logo-container button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Mobile Menu */
+header .navigation {
+  background-color: var(--white-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  min-height: 100vh;
+  width: 70vw;
+  border-left: 0.25rem solid var(--secondary-color);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header .navigation.active {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+header .navigation nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header .navigation nav a {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-family: var(--heading-font);
+  width: 100%;
+  padding: 1rem 1.5rem;
+  text-align: end;
+}
+
+header .navigation nav a.active {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+header .navigation nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.menu-mobile-title {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+}
+
+.menu-mobile-title button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: solid 1px var(--accent-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.menu-mobile-title button:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+footer .contact-info {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.2rem;
+}
+
+footer .contact-info img {
+  border-radius: 5px;
+  width: 30px;
+  height: auto;
+}
+
+footer .contact-info p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-left: 1rem;
+  color: var(--white-color);
+}
+
+footer .contact-info a {
+  color: var(--white-color);
+}
+
+footer .contact-info a:hover {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 1rem;
+  font-family: var(--white-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-right: 2px solid var(--accent-color);
+}
+
+#lastModified {
+  font-size: 0.5rem;
+  text-align: center;
+  background-color: var(--black-color);
+  margin: 0;
+  padding: 0.5rem 0;
+}

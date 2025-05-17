@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
         content="Explore Valparaíso's local business directory with Valpommerce. Connect with small businesses, discover events, and support the local economy.">
     <meta name="author" content="Julian A. Cuervo">
     <!-- OpenGraphs -->
-    <meta property="og:title" content="Directory | VALPOMMERCE">
+    <meta property="og:title" content="Valpommerce | Valparaiso Local Business Directory">
     <meta property="og:description"
         content="Explore Valparaíso's local business directory with Valpommerce. Connect with small businesses, discover events, and support the local economy.">
     <meta property="og:url" content="https://jcuervonarvaez.github.io/wdd231/chamber/">
@@ -21,12 +21,85 @@
     <!-- Twitter X -->
     <meta property="twitter:card" content="summary_large_image">
     <!-- Googlefont -->
-    <!-- styles -->
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- Scripts -->
+    <script src="scripts/shared.js" defer></script>
 </head>
 
 <body>
+    <div class="container">
+        <header>
 
+            <div class="logo-container">
+                <img src="images/logo-light.png" alt="logo of Valpommerce" title="logo of Valpommerce" width="300"
+                    height="300">
+                <span class="site-name">VALPOMMERCE</span>
+                <button title="Site Menu" type="button" id="menu-mobile">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </div>
+            <div id="navMenu" class="navigation">
+                <div class="menu-mobile-title">
+                    <span>Menu</span>
+                    <button title="Close Menu" type="button" id="menu-mobile-close">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <nav>
+                    <a href="./">Home</a>
+                    <a href="./">Discover</a>
+                    <a class="active" href="./">Bussiness Directory</a>
+                    <a href="./">Join</a>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <h1>Valparaiso Local Business Directory</h1>
+            <main></main>
+            <aside></aside>
+        </div>
+        <footer>
+            <section class="contact-info">
+                <div class="logo-footer">
+                    <img src="images/logo-dark.webp" alt="logo of Valpommerce" title="logo of Valpommerce" width="300"
+                        height="300" loading="lazy">
+                    <span>VALPOMMERCE</span>
+                </div>
+                <p>
+                    Calle Ficticia 123, Valpara&iacute;so, Chile<br>
+                    <a href="mailto:info@valpommerce.org">info@valpommerce.org</a><br>
+                    <a href="tel:(+56) 9 42135555">(+56) 9 4213-5555</a><br>
+                </p>
+            </section>
+            <section class="social-networks"></section>
+            <section class="copy-right">
+                <div class="copy-right-author">
+                    <span>WDD231 Class Project</span>
+                    <span>Julian A. Cuervo 🚀</span>
+                </div>
+                <p>
+                    &copy;&nbsp;
+                    <span id="currentYear"></span>
+                    - Valpommerce
+                </p>
+                <p id="lastModified"></p>
+            </section>
+        </footer>
+    </div>
 </body>
 
 </html>
