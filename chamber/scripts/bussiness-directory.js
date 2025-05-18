@@ -2,7 +2,7 @@ const url =
   "https://jcuervonarvaez.github.io/wdd231/chamber/scripts/business.json";
 const cardsGridElement = document.getElementById("business-cards");
 
-function addGridCard(busineess) {
+async function addGridCard(busineess) {
   let cardWrapper = document.createElement("div");
   let cardTitle = document.createElement("h2");
   let cardLogo = document.createElement("img");
@@ -26,14 +26,14 @@ async function getBusiness() {
   try {
     const response = await fetch(url, { method: "get" });
     const data = await response.json();
-    displayBusiness(data);
+    await displayBusiness(data);
   } catch (error) {
     alert("Error on API Request");
     console.error(error.message);
   }
 }
 
-function displayBusiness(data) {
+async function displayBusiness(data) {
   data.forEach((busineess) => {
     addGridCard(busineess);
   });
