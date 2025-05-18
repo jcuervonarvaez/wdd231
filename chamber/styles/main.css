@@ -20,7 +20,8 @@ a {
 h1{
   font-size: 1.5rem;
   font-family: var(--heading-font);
-  color: var(--black-color);
+  color: var(--secondary-color);
+  text-align: center;
 }
 
 .container {
@@ -250,4 +251,5 @@ footer .copyright-wrapper .copyright-text {
 
 main {
   margin-top: 70px;
+  padding: 0 1rem;
 }
