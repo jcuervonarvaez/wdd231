@@ -104,11 +104,17 @@
   footer .copyright-wrapper .copyright-text {
     background-color: transparent;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
   main {
     max-width: 1024px;
+    min-height: 90vh;
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
     margin-top: 110px;
-    width: 100%;
   }
 }
