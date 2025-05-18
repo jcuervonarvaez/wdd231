@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Valpommerce | Valparaiso Local Business Directory</title>
     <!-- Metadata -->
     <meta name="description"
@@ -37,64 +37,69 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-
-            <div class="logo-container">
+    <header>
+        <div class="header-top">
+            <a href="/chamber/">
                 <img src="images/logo-light.png" alt="logo of Valpommerce" title="logo of Valpommerce" width="300"
                     height="300">
                 <span class="site-name">VALPOMMERCE</span>
+            </a>
+            <div class="hamburger-wrapper">
                 <button title="Site Menu" type="button" id="menu-mobile">
                     <span class="material-symbols-outlined">
                         menu
                     </span>
                 </button>
             </div>
-            <div id="navMenu" class="navigation">
-                <div class="menu-mobile-title">
-                    <span>Menu</span>
-                    <button title="Close Menu" type="button" id="menu-mobile-close">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </button>
-                </div>
-                <nav>
-                    <a href="./">Home</a>
-                    <a href="./">Discover</a>
-                    <a class="active" href="./">Bussiness Directory</a>
-                    <a href="./">Join</a>
-                </nav>
-            </div>
-        </header>
-        <div class="content">
-            <h1>Valparaiso Local Business Directory</h1>
-            <main></main>
-            <aside></aside>
         </div>
+        <div id="navMenu" class="header-nav">
+            <div class="navigation-head">
+                <span class="navigation-title">Menu</span>
+                <button title="Close Menu" type="button" id="mobile-close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+            <nav class="navigation-body">
+                <a href="./index.html">Home</a>
+                <a href="./discover.html">Discover</a>
+                <a href="./directory.html">Bussiness Directory</a>
+                <a href="./join.html">Join</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Valparaiso Local Business Directory</h1>
+            <section></section>
+            <section></section>
+
+        </main>
         <footer>
-            <section class="contact-info">
-                <div class="logo-footer">
+            <div class="contact-wrapper">
+                <a href="/chamber/" class="logo-footer">
                     <img src="images/logo-dark.webp" alt="logo of Valpommerce" title="logo of Valpommerce" width="300"
                         height="300" loading="lazy">
                     <span>VALPOMMERCE</span>
-                </div>
-                <p>
-                    Calle Ficticia 123, Valpara&iacute;so, Chile<br>
-                    <a href="mailto:info@valpommerce.org">info@valpommerce.org</a><br>
-                    <a href="tel:(+56) 9 42135555">(+56) 9 4213-5555</a><br>
-                </p>
-            </section>
-            <section class="social-networks"></section>
-            <section class="copy-right">
-                <p>
-                    WDD231 Class Project | Julian A. Cuervo 🚀<br>
+                </a>
+                <ul>
+                    <li>Calle Ficticia 123, Valpara&iacute;so, Chile</li>
+                    <li><a href="mailto:info@valpommerce.org">info@valpommerce.org</a></li>
+                    <li><a href="tel:(+56) 9 42135555">(+56) 9 4213-5555</a></li>
+                </ul>
+            </div>
+            <div class="social-networks"></div>
+            <div class="copyright-wrapper">
+                <p class="copyright-text">
+                    WDD231 Class Project - Julian A. Cuervo 🚀 <br>
                     &copy;&nbsp;
                     <span id="currentYear"></span>
                     - Valpommerce
+
                 </p>
                 <p id="lastModified"></p>
-            </section>
+            </div>
         </footer>
     </div>
 </body>

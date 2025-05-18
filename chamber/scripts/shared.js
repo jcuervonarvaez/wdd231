@@ -1,5 +1,5 @@
 const buttonMenuMobile = document.getElementById("menu-mobile");
-const buttonMenuMobileClose = document.getElementById("menu-mobile-close");
+const buttonMenuMobileClose = document.getElementById("mobile-close");
 const navElement = document.getElementById("navMenu");
 const today = new Date();
 
