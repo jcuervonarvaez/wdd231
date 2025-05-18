@@ -4,4 +4,120 @@
 
 /* Laptops */
 @media screen and (min-width: 1024px) {
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 1rem;
+  }
+
+  /* Header logo */
+  header .header-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .header-top a {
+    font-size: 2rem;
+  }
+
+  header .header-top a img {
+    width: 50px;
+    height: auto;
+  }
+
+  header .header-top .hamburger-wrapper {
+    display: none;
+  }
+
+  /* Header navigation */
+  header .header-nav {
+    position: relative;
+    min-height: initial;
+    width: initial;
+    box-shadow: none;
+    border: none;
+    transform: translateX(0);
+  }
+
+  header .header-nav .navigation-head {
+    display: none;
+  }
+
+  header .header-nav .navigation-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .header-nav .navigation-body a {
+    font-size: 1.2rem;
+    width: inherit;
+    margin: 0 2rem;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+  }
+
+  header .header-nav .navigation-body a:hover {
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  footer .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  footer .contact-wrapper .logo-footer img {
+    width: 50px;
+  }
+
+  footer .contact-wrapper ul {
+    flex-grow: 0;
+    padding: 1rem;
+  }
+
+  footer .contact-wrapper ul li {
+    font-size: 1.2rem;
+  }
+
+  footer .contact-wrapper ul li a {
+    counter-reset: ;
+  }
+
+  footer .social-networks {
+  }
+
+  footer .copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  footer .copyright-wrapper p {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+
+  footer .copyright-wrapper .copyright-text {
+    background-color: transparent;
+  }
+
+  main {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 100%;
+  }
 }
