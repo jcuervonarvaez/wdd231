@@ -61,27 +61,35 @@ function createBusinessCard(business) {
     `Logo of ${business.name}`
   );
   businessCardProfileElement.appendChild(businessCardProfileImgElement);
-  
+
   let businessCardProfileH2Element = document.createElement("h2");
   businessCardProfileH2Element.textContent = business.name;
   businessCardProfileElement.appendChild(businessCardProfileH2Element);
-  
+
   let businessCardProfilePElement = document.createElement("p");
-  businessCardProfilePElement.textContent = business.description
+  businessCardProfilePElement.textContent = business.description;
   businessCardProfileElement.appendChild(businessCardProfilePElement);
 
+  let businessCardContactInfoElement = document.createElement("div");
+  businessCardContactInfoElement.classList.add("business-card-contact-info");
+
+  let businessCardContactInfoUlElement = document.createElement("ul");
+  let address = document.createElement("li");
+  address.textContent = business.address;
+
+  businessCardContactInfoUlElement.appendChild(address);
+
+  businessCardContactInfoElement.appendChild(businessCardContactInfoUlElement);
+
   businessCardBodyElement.appendChild(businessCardProfileElement);
+  businessCardBodyElement.appendChild(businessCardContactInfoElement);
 
   businessCardElement.appendChild(businessCardBodyElement);
 
   return businessCardElement;
   //     <div class="business-card-body">
   //         <div class="business-card-contact-info">
-  //             <ul>
-  //                 <li>test</li>
-  //                 <li>test</li>
-  //                 <li>test</li>
-  //             </ul>
+
   //         </div>
   //     </div>
   //     <div class="business-card-footer">
