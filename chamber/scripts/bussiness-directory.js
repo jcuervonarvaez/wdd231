@@ -74,17 +74,20 @@ function createBusinessCard(business) {
   businessCardContactInfoElement.classList.add("business-card-contact-info");
 
   let businessCardContactInfoUlElement = document.createElement("ul");
+
   let address = document.createElement("li");
   address.textContent = business.address;
-
   businessCardContactInfoUlElement.appendChild(address);
 
   businessCardContactInfoElement.appendChild(businessCardContactInfoUlElement);
 
   businessCardBodyElement.appendChild(businessCardProfileElement);
   businessCardBodyElement.appendChild(businessCardContactInfoElement);
-
   businessCardElement.appendChild(businessCardBodyElement);
+
+  let businessCardFooter = document.createElement("div");
+  businessCardFooter.classList.add("business-card-footer");
+  businessCardElement.appendChild(businessCardFooter);
 
   return businessCardElement;
   //     <div class="business-card-body">
