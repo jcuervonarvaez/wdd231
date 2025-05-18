@@ -30,9 +30,6 @@ Benja is a 22-year-old university student at the Universidad Técnica Federico S
 
 #### New residents or business prospects.
 María is a 38-year-old school teacher from Quilpué who is passionate about finding unique, high-quality furniture. She dislikes mass-produced pieces from big retailers like París, Jumbo, or Falabella, and instead wants to support local artisans. However, she doesn’t know where to find local businesses that offer the kind of personalized furniture she’s looking for. María is searching for a platform where she can easily discover and connect with local creators who align with her taste and values.
-
-**Scenarios:**
-
 ---
 
 # Page Specifications
