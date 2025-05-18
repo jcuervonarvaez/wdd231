@@ -17,11 +17,9 @@ a {
   text-decoration: none;
 }
 
-h1{
+h1 {
   font-size: 2rem;
   font-family: var(--heading-font);
-  color: var(--secondary-color);
-  text-align: center;
 }
 
 .container {
@@ -251,4 +249,52 @@ footer .copyright-wrapper .copyright-text {
 main {
   margin-top: 70px;
   padding: 0 1rem;
+}
+
+/* Directory */
+h1.directory-h1 {
+  color: var(--white-color);
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.business-cards {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 1rem auto;
+}
+
+.business-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: -2px 0 5px rgba(26, 105, 177, 0.3);
+}
+
+.business-cards .card:hover {
+  background-color: var(--primary-color);
+}
+
+.business-cards .card h2 {
+  font-family: var(--heading-font);
+  color: var(--black-color);
+  text-align: center;
+}
+
+.business-cards .card:hover h2 {
+  color: var(--white-color);
+}
+
+.business-cards .card img {
+  width: 170px;
+  height: auto;
+  padding: 1rem;
+  background-color: rgba(26, 105, 177, 0.3);
+  border-radius: 5px;
 }
