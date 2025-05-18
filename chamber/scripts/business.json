@@ -91,19 +91,6 @@
     }
   },
   {
-    "name": "CIntegral",
-    "address": "Libertad 749, Viña del Mar, Valparaíso, Chile",
-    "phone": "32 2327015",
-    "website": "https://cintegral.cl/?srsltid=AfmBOopSG2rKh17IekHqC4ULZpsivqS1IOeUqacFX8SoGRnYxmO0TR1n",
-    "image": "https://jcuervonarvaez.github.io/wdd231/chamber/images/business/cintegral.webp",
-    "membership_level": "2",
-    "category": "Computación Integral",
-    "description": "Somos una empresa con más de 29 años en el mercado. Nos hemos convertido en uno de los más importantes proveedores del área de computación.",
-    "social_media": {
-      "Facebook": "https://www.facebook.com/Cintegral"
-    }
-  },
-  {
     "name": "SuperZoo",
     "address": "Av. Los Carrera 754, Quilpué, Valparaíso, Chile",
     "phone": "+56227607777",
@@ -140,19 +127,6 @@
     "description": "ALERCE MUEBLES, es una empresa familiar chilena, con más de 12 años de experiencia en el rubro de muebles para el hogar.",
     "social_media": {
       "Facebook": ""
-    }
-  },
-  {
-    "name": "Tierra Nativa",
-    "address": "Av. Valparaíso 279, Local 1, Viña del Mar, Valparaíso, Chile",
-    "phone": "+56 9 8730 9436",
-    "website": "https://tierranativa.cl/",
-    "image": "https://jcuervonarvaez.github.io/wdd231/chamber/images/business/tierra-nativa.webp",
-    "membership_level": "1",
-    "category": "Productos Artesanales",
-    "description": " Artesanía Típica Chilena, trabajamos con destacados Artesanos de nuestro País.",
-    "social_media": {
-      "Facebook": "https://www.facebook.com/tnativa"
     }
   }
 ]
