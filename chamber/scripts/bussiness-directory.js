@@ -1,5 +1,5 @@
 const url =
-  "https://jcuervonarvaez.github.io/wdd231/chamber/scripts/business.json";
+  "https://jcuervonarvaez.github.io/wdd231/chamber/scripts/members.json";
 const cardsGridElement = document.getElementById("business-cards");
 
 async function getBusiness() {
