@@ -67,7 +67,7 @@ function createBusinessCard(business) {
   businessCardProfileElement.appendChild(businessCardProfileH2Element);
 
   let businessCardProfilePElement = document.createElement("p");
-  businessCardProfilePElement.textContent = business.description;
+  businessCardProfilePElement.textContent = business.category;
   businessCardProfileElement.appendChild(businessCardProfilePElement);
 
   let businessCardContactInfoElement = document.createElement("div");
@@ -78,6 +78,10 @@ function createBusinessCard(business) {
   let address = document.createElement("li");
   address.textContent = business.address;
   businessCardContactInfoUlElement.appendChild(address);
+  
+  let phone = document.createElement("li");
+  phone.textContent = business.phone;
+  businessCardContactInfoUlElement.appendChild(phone);
 
   businessCardContactInfoElement.appendChild(businessCardContactInfoUlElement);
 
@@ -85,9 +89,16 @@ function createBusinessCard(business) {
   businessCardBodyElement.appendChild(businessCardContactInfoElement);
   businessCardElement.appendChild(businessCardBodyElement);
 
-  let businessCardFooter = document.createElement("div");
-  businessCardFooter.classList.add("business-card-footer");
-  businessCardElement.appendChild(businessCardFooter);
+  let businessCardFooterElement = document.createElement("div");
+  businessCardFooterElement.classList.add("business-card-footer");
+
+  let businessCardFooterAElement = document.createElement("a");
+  businessCardFooterAElement.setAttribute('href', business.website);
+  businessCardFooterAElement.setAttribute('target', '_blank');
+  businessCardFooterAElement.textContent = 'Visit Website 🌐';
+
+  businessCardFooterElement.appendChild(businessCardFooterAElement);
+  businessCardElement.appendChild(businessCardFooterElement);
 
   return businessCardElement;
   //     <div class="business-card-body">

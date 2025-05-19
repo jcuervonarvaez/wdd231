@@ -294,17 +294,17 @@ h1.directory-h1 {
 
 .business-card .business-card-tag-member {
   color: var(--white-color);
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 .business-card .business-card-tag-silver {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--black-color);
+  background-color: #c0c0c0;
 }
 
 .business-card .business-card-tag-gold {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--black-color);
+  background-color: #ffd700;
 }
 
 .business-card-body {
@@ -348,68 +348,22 @@ h1.directory-h1 {
   background-color: var(--secondary-color);
 }
 
-.business-card-footer {
+.business-card-contact-info ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+.business-card-contact-info ul li {
   font-family: var(--text-font);
-  font-weight: 100;
-  text-align: center;
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 0;
 }
 
-/* <div class="">
-                    <div class="">
-                        <div class="business-card-tag-silver">
-                            <span>Platinum</span>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="business-card-profile">
-                            <img src="./images/business/murken.webp" alt="" loading="lazy">
-                            <h2>negocio</h2>
-                            <p>otro texto</p>
-                        </div>
-                        <div class="business-card-contact-info">
-                            <ul>
-                                <li>test</li>
-                                <li>test</li>
-                                <li>test</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="business-card-footer">
-                        <p>
-                            Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                </div> */
-/* 
-.business-cards .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: -2px 0 5px rgba(26, 105, 177, 0.3);
-}
-
-.business-cards .card:hover {
-  background-color: var(--primary-color);
-}
-
-.business-cards .card h2 {
-  font-family: var(--heading-font);
-  color: var(--black-color);
+.business-card-footer {
+  padding: 1rem 1.5rem;
   text-align: center;
 }
 
-.business-cards .card:hover h2 {
-  color: var(--white-color);
+.business-card-footer a {
+  font-family: var(--text-font);
+  font-weight: 700;
+  color: var(--accent-color);
 }
-
-.business-cards .card img {
-  width: 170px;
-  height: auto;
-  padding: 1rem;
-  background-color: rgba(26, 105, 177, 0.3);
-  border-radius: 5px;
-} */
