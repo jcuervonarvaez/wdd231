@@ -73,10 +73,36 @@
     <div class="container">
         <main>
             <h1 class="directory-h1">Valparaiso Business Directory</h1>
-            <section id="business-cards" class="business-cards"></section>
-            <section>
-                <table></table>
+            <section class="filters">
+                <div class="filter-wrapper">
+                    <button type="button" title="Change to grid view mode" id="button-view-grid">
+                        <span class="material-symbols-outlined">
+                            grid_view
+                        </span>
+                    </button>
+                    <button type="button" title="Change to list view mode" id="button-view-list">
+                        <span class="material-symbols-outlined">
+                            view_list
+                        </span>
+                    </button>
+                </div>
             </section>
+            <section id="business-list" class="business-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Membership</th>
+                            <th>Address / Phone</th>
+                            <th>Website</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </section>
+            <section id="business-cards" class="business-cards"></section>
         </main>
         <footer>
             <div class="contact-wrapper">

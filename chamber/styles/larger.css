@@ -118,4 +118,8 @@
     margin: 0px auto;
     margin-top: 110px;
   }
+
+  .business-list table{
+    font-size: 1.2rem;
+  }
 }

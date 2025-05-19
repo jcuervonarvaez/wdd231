@@ -1,19 +1,64 @@
 const url =
   "https://jcuervonarvaez.github.io/wdd231/chamber/scripts/members.json";
 const cardsGridElement = document.getElementById("business-cards");
+const listElement = document.getElementById("business-list");
+const buttonGrid = document.getElementById("button-view-grid");
+const buttonList = document.getElementById("button-view-list");
+
+buttonGrid.addEventListener("click", () => {
+  listElement.style.display = "none";
+  cardsGridElement.style.display = "grid";
+});
+
+buttonList.addEventListener("click", () => {
+  listElement.style.display = "flex";
+  cardsGridElement.style.display = "none";
+});
 
 async function getBusiness() {
   try {
     const response = await fetch(url, { method: "get" });
     const business = await response.json();
     business.forEach((business) => {
-      let card = createBusinessCard(business);
-      cardsGridElement.appendChild(card);
+      cardsGridElement.appendChild(createBusinessCard(business));
+      let listTable = listElement.querySelector("tbody");
+      listTable.appendChild(createBusinessRow(business));
     });
   } catch (error) {
     alert("Error on API Request");
     console.error(error.message);
   }
+}
+
+function createBusinessRow(business) {
+  let businessRowElement = document.createElement("tr");
+  let name = document.createElement("td");
+  let membership = document.createElement("td");
+  let address = document.createElement("td");
+  let website = document.createElement("td");
+  let memberType = "";
+  switch (business.membership_level) {
+    case "1":
+      memberType = "Member";
+      break;
+    case "2":
+      memberType = "Silver";
+      break;
+    case "3":
+      memberType = "Gold";
+      break;
+  }
+  name.textContent = business.name;
+  membership.textContent = memberType;
+  address.innerHTML = `${business.address} <br> ${business.phone}`;
+  website.textContent = business.website;
+
+  businessRowElement.appendChild(name);
+  businessRowElement.appendChild(membership);
+  businessRowElement.appendChild(address);
+  businessRowElement.appendChild(website);
+
+  return businessRowElement;
 }
 
 function createBusinessCard(business) {
@@ -77,7 +122,7 @@ function createBusinessCard(business) {
   let address = document.createElement("li");
   address.textContent = business.address;
   businessCardContactInfoUlElement.appendChild(address);
-  
+
   let phone = document.createElement("li");
   phone.textContent = business.phone;
   businessCardContactInfoUlElement.appendChild(phone);
@@ -92,24 +137,14 @@ function createBusinessCard(business) {
   businessCardFooterElement.classList.add("business-card-footer");
 
   let businessCardFooterAElement = document.createElement("a");
-  businessCardFooterAElement.setAttribute('href', business.website);
-  businessCardFooterAElement.setAttribute('target', '_blank');
-  businessCardFooterAElement.textContent = 'Visit Website 🌐';
+  businessCardFooterAElement.setAttribute("href", business.website);
+  businessCardFooterAElement.setAttribute("target", "_blank");
+  businessCardFooterAElement.textContent = "Visit Website 🌐";
 
   businessCardFooterElement.appendChild(businessCardFooterAElement);
   businessCardElement.appendChild(businessCardFooterElement);
 
   return businessCardElement;
-  //     <div class="business-card-body">
-  //         <div class="business-card-contact-info">
-
-  //         </div>
-  //     </div>
-  //     <div class="business-card-footer">
-  //         <p>
-  //             Lorem ipsum dolor sit amet
-  //         </p>
-  //     </div>
 }
 
 getBusiness();
