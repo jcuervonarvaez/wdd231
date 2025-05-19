@@ -23,7 +23,6 @@ function createBusinessCard(business) {
   let businessCardHeadElement = document.createElement("div");
   businessCardHeadElement.classList.add("business-card-head");
 
-  console.log(business);
   if (business.membership_level) {
     let businessCardTagElement = document.createElement("div");
     let businessCardTagSpanElement = document.createElement("span");
