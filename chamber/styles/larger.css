@@ -106,7 +106,6 @@
   }
 
   .container {
-    margin-top: 0px;
     display: flex;
     flex-direction: column;
   }
