@@ -274,6 +274,7 @@ h1.directory-h1 {
 
 .business-card {
   display: flex;
+  min-height: 392px;
   flex-direction: column;
   background-color: var(--white-color);
   border-radius: 10px 10px 5px 5px;

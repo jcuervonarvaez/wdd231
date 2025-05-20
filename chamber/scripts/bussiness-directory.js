@@ -19,6 +19,7 @@ async function getBusiness() {
   try {
     const response = await fetch(url, { method: "get" });
     const business = await response.json();
+    cardsGridElement.innerHTML = '';
     business.forEach((business) => {
       cardsGridElement.appendChild(createBusinessCard(business));
       let listTable = listElement.querySelector("tbody");
@@ -99,6 +100,7 @@ function createBusinessCard(business) {
 
   let businessCardProfileImgElement = document.createElement("img");
   businessCardProfileImgElement.setAttribute("src", business.image);
+  businessCardProfileImgElement.setAttribute("loading", "lazy");
   businessCardProfileImgElement.setAttribute("alt", `Logo of ${business.name}`);
   businessCardProfileImgElement.setAttribute(
     "title",
