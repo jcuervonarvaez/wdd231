@@ -1,13 +1,15 @@
-const buttonMenuMobile = document.getElementById("menu-mobile");
-const buttonMenuMobileClose = document.getElementById("mobile-close");
-const navElement = document.getElementById("navMenu");
+// Copyright and date information
 const today = new Date();
-
 const currentDateElement = document.getElementById("currentYear");
 const lastUpdatedElement = document.getElementById("lastModified");
 
 currentDateElement.innerHTML = today.getFullYear();
 lastUpdatedElement.innerHTML = `Last Modification: ${document.lastModified}`;
+
+// Navigation menu toggle for mobile view
+const buttonMenuMobile = document.getElementById("menu-mobile");
+const buttonMenuMobileClose = document.getElementById("mobile-close");
+const navElement = document.getElementById("navMenu");
 
 buttonMenuMobile.addEventListener("click", function () {
   navElement.classList.toggle("active");
