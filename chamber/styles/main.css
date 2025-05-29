@@ -425,6 +425,13 @@ h1.directory-h1 {
 }
 
 /* Home */
+h1.main-heading {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: var(--secondary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
 .hero {
   position: relative;
   height: 600px;
@@ -454,7 +461,7 @@ h1.directory-h1 {
   margin: 0;
 }
 
-.hero-content p{
+.hero-content p {
   font-size: 1rem;
   font-weight: 300;
   margin: 0.5rem 0;
