@@ -428,6 +428,8 @@ h1.directory-h1 {
 h1.main-heading {
   margin-top: 3rem;
   margin-bottom: 0;
+  font-size: 1.6rem;
+  text-align: center;
   color: var(--secondary-color);
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--accent-color);
@@ -584,4 +586,39 @@ h1.main-heading {
   box-shadow: 2px 0px 10px rgba(26, 105, 177, 0.3);
   display: flex;
   flex-direction: column;
+}
+
+.wheater-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheater-card-content > #weather-info-list {
+  list-style: none;
+  padding: 0 2rem 1rem 2rem;
+  margin: 0;
+  flex: 1;
+  width: 100%;
+}
+
+.wheater-card-content #weather-info-list li {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+}
+
+.wheater-card-content #weather-info-list li > span {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  padding-right: 0.5rem;
+  color: var(--secondary-blue);
+}
+
+.wheater-card-content > .icon-weather img {
+  width: 150px;
+  height: auto;
 }
