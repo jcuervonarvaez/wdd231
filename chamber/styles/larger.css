@@ -88,9 +88,6 @@
     font-size: 1.2rem;
   }
 
-  footer .social-networks {
-  }
-
   footer .copyright-wrapper {
     display: flex;
     flex-direction: column;
@@ -124,7 +121,7 @@
   }
 
   /* Home */
-  h1.main-heading{
+  h1.main-heading {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;

@@ -89,19 +89,43 @@
     </header>
     <div class="container">
       <main>
-        <h1 class="main-heading">Valparaiso Chamber of Commerce</h1>
         <section class="hero">
-          <span class="hero-title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </span>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
-            incidunt odio eligendi saepe minus corporis beatae, sunt cumque id
-            asperiores aspernatur autem, officia ratione totam dolor consectetur
-            assumenda accusantium pariatur.
-          </p>
-          <a href="">CTA</a>
+          <div class="overlay"></div>
+          <picture>
+            <!-- Desktop: 1440px o más -->
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/banner-home-large.webp"
+            />
+
+            <!-- Tablet: desde 768px hasta 1439px -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/banner-home-medium.webp"
+            />
+
+            <!-- Móvil: menos de 768px -->
+            <img
+              src="./images/banner-home-small.webp"
+              alt="Banner principal"
+              style="width: 100%; height: auto"
+            />
+          </picture>
+          <div class="hero-content">
+            <span class="hero-title">
+              Empowering small businesses in Valparaíso through community and
+              digital tools.
+            </span>
+            <p>
+              Valpommerce helps local shops, artisans, and entrepreneurs connect
+              with new customers and each other. Join our growing network to
+              access training, promote your business online, and take part in
+              events that strengthen the local economy.
+            </p>
+            <a href="#join">Join Now</a>
+          </div>
         </section>
+        <h1 class="main-heading">Valparaiso Chamber of Commerce</h1>
         <section class="wheather-home">
           <div class="wheater-card">
             <h2>Events</h2>
