@@ -156,4 +156,17 @@
   .wheather-home h2 {
     font-size: 1.7rem;
   }
+
+  .hero-content .hero-title {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
 }
