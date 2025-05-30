@@ -596,7 +596,7 @@ h1.main-heading {
   align-items: center;
 }
 
-.wheater-card-content > #weather-info-list {
+.wheater-card-content > .weather-info-list {
   list-style: none;
   padding: 0 2rem 1rem 2rem;
   margin: 0;
@@ -604,13 +604,14 @@ h1.main-heading {
   width: 100%;
 }
 
-.wheater-card-content #weather-info-list li {
+.wheater-card-content .weather-info-list li {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   font-size: 1.3rem;
 }
 
-.wheater-card-content #weather-info-list li > span {
+.wheater-card-content .weather-info-list li > span {
   display: block;
   font-style: normal;
   font-weight: 700;
@@ -618,7 +619,31 @@ h1.main-heading {
   color: var(--secondary-blue);
 }
 
-.wheater-card-content > .icon-weather img {
+#weather-info-list p {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.weather-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-header span {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.icon-weather img {
   width: 150px;
   height: auto;
 }
