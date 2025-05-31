@@ -7,7 +7,7 @@
 
 ## **Site Purpose:**
 
-The purpose of this website is to establish a digital presence for small businesses in the Valparaíso region, helping them connect with communities — both with other bussiness owners and with customers interested in their services. The platform will allow for event announcements, the creation of a local business directory, and easier connections between people, with the goal of attracting new clients, increasing sales, and bringing these growing businesses into the digital age."
+The purpose of this website is to establish a digital presence for small businesses in the Valparaíso region, helping them connect with communities — both with other business owners and with customers interested in their services. The platform will allow for event announcements, the creation of a local business directory, and easier connections between people, with the goal of attracting new clients, increasing sales, and bringing these growing businesses into the digital age."
 
 ### **Target Market:**
 

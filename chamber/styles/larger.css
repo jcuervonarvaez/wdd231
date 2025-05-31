@@ -144,13 +144,13 @@
   }
 
   /* Weather */
-  .wheather-home {
+  .weather-home {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 3fr repeat(2, 2fr);
   }
 
-  .wheather-home h2 {
+  .weather-home h2 {
     font-size: 1.7rem;
   }
 
