@@ -15,6 +15,41 @@ function calculateWindChill(temperature, windSpeed) {
   return Math.round(result * 10) / 10;
 }
 
+async function getForecast() {
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  try {
+    const response = await fetch(url, { method: "get" });
+    const forecastData = await response.json();
+    return forecastData;
+  } catch (error) {
+    alert("Error on API Request");
+    console.error(error.message);
+    return null;
+  }
+}
+
+function getnext3Days(forecastList) {
+  // Get the next 3 days from the forecast
+  // The forecast is in 3-hour intervals, so we need to find the next 3 unique days
+  let threeDaysForecast = [];
+  for (let i = 0; i < forecastList.length; i += 8) {
+    // We only need the next 3 days
+    if (threeDaysForecast.length >= 3) {
+      break;
+    }
+    // Skip the first entry as it is the current weather
+    if (i === 0) {
+      continue;
+    }
+    threeDaysForecast.push({
+      date: new Date(forecastList[i].dt * 1000),
+      temperature: forecastList[i].main.temp,
+    });
+  }
+
+  return threeDaysForecast;
+}
+
 async function getWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   try {
@@ -37,7 +72,7 @@ function createWeatherInfoListItem(title, data) {
   return li;
 }
 
-async function displayWeather(card) {
+async function displayWeather(container) {
   const weatherData = await getWeather();
 
   const temperature = weatherData.main.temp;
@@ -82,11 +117,37 @@ async function displayWeather(card) {
   ul.appendChild(createWeatherInfoListItem("Low Temp", `${lowTemp}°C`));
   ul.appendChild(createWeatherInfoListItem("Humidity", `${humidity}%`));
 
-  card.appendChild(header);
-  card.appendChild(ul);
+  container.appendChild(header);
+  container.appendChild(ul);
+}
+
+async function displayForecast(container) {
+  const forecast = await getForecast();
+  if (!forecast || !forecast.list || forecast.list.length === 0) {
+    console.error("No forecast data available");
+    return;
+  }
+  const next3Days = getnext3Days(forecast.list);
+  const ul = document.createElement("ul");
+  next3Days.forEach((day) => {
+    // date style dayname of the week
+    const date = day.date.toLocaleDateString("en-US", {
+      weekday: "long",
+    });
+    const li = createWeatherInfoListItem(
+      date,
+      `${Math.round(day.temperature)}°C`
+    );
+    ul.classList.add("forecast-info-list");
+    ul.appendChild(li);
+  });
+  container.appendChild(ul);
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
   const weatherElement = document.getElementById("weather-info-list");
-  await displayWeather(weatherElement);
+  const forecastElement = document.getElementById("forecast-info-list");
+
+  displayWeather(weatherElement);
+  displayForecast(forecastElement);
 });

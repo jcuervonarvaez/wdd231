@@ -647,3 +647,24 @@ h1.main-heading {
   width: 150px;
   height: auto;
 }
+
+.forecast-info-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.forecast-info-list > li {
+  font-size: 1.5rem;
+}
+
+.forecast-info-list > li > span {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
