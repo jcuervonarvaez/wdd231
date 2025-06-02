@@ -137,4 +137,18 @@
     grid-column: 1 / 3;
     text-align: center;
   }
+
+  .content-directory {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .directory-title {
+    font-size: 2.5rem;
+  }
+
+  .breadcrumb ul {
+    justify-content: start;
+  }
 }

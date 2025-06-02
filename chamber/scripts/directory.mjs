@@ -1,5 +1,4 @@
-import { getBusinessCard } from "./business-components.mjs";
-import { fetchBusiness } from "./business-api.mjs";
+import { getBusinessCard, fetchBusiness } from "./business.mjs";
 
 /** Business Directory Script
  * This script fetches business data from a JSON file and displays it in two formats:
