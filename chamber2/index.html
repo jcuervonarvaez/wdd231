@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <!-- Googlefont -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://jcuervonarvaez.github.io" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Scripts -->
+    <script src="scripts/shared.js" defer></script>
+    <script type="module" src="scripts/home.mjs"></script>
+    <script type="module" src="scripts/weather.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <a href="/wdd231/chamber/">
+          <img
+            src="images/logo-light.webp"
+            alt="logo of Valpommerce"
+            title="logo of Valpommerce"
+            width="300"
+            height="300"
+          />
+          <span class="site-name">VALPOMMERCE</span>
+        </a>
+        <div class="hamburger-wrapper">
+          <button title="Site Menu" type="button" id="menu-mobile">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
+      </div>
+      <div id="navMenu" class="header-nav">
+        <div class="navigation-head">
+          <span class="navigation-title">Menu</span>
+          <button title="Close Menu" type="button" id="mobile-close">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+        </div>
+        <nav class="navigation-body">
+          <a href="./">Home</a>
+          <a href="./">Discover</a>
+          <a href="./directory.html">Business Directory</a>
+          <a href="./">Join</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <section class="hero">
+          <div class="overlay"></div>
+          <picture>
+            <!-- Desktop: 1440px o más -->
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/banner-home-large.webp"
+            />
+
+            <!-- Tablet: desde 768px hasta 1439px -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/banner-home-medium.webp"
+            />
+
+            <!-- Móvil: menos de 768px -->
+            <img src="./images/banner-home-small.webp" alt="Banner principal" />
+          </picture>
+          <div class="hero-content">
+            <span class="hero-title">
+              Empowering small businesses in Valparaiso through community and
+              digital tools.
+            </span>
+            <p>
+              Valpommerce helps local shops, artisans, and entrepreneurs connect
+              with new customers and each other. Join our growing network to
+              access training, promote your business online, and take part in
+              events that strengthen the local economy.
+            </p>
+            <a href="#join">Join Now</a>
+          </div>
+        </section>
+        <h1 class="main-heading">Valparaiso Chamber of Commerce</h1>
+        <section class="weather-home">
+          <div class="wheater-card">
+            <h2>Events</h2>
+          </div>
+          <div class="wheater-card">
+            <h2>Current Weather</h2>
+            <div id="weather-info-list" class="wheater-card-content"></div>
+          </div>
+          <div class="wheater-card">
+            <h2>Weather Forecast</h2>
+            <div id="forecast-info-list" class="wheater-card-content"></div>
+          </div>
+        </section>
+        <div class="spotlight">
+          <div class="spotlight-background"></div>
+          <h2>Spotlight on Local Talent</h2>
+          <p>Celebrating Valparaíso’s Small Businesses, Artisans & Creators</p>
+          <section id="business-cards" class="business-cards">
+            <div class="business-card"></div>
+            <div class="business-card"></div>
+            <div class="business-card"></div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="contact-wrapper">
+          <a href="/wdd231/chamber/" class="logo-footer">
+            <img
+              src="images/logo-dark.webp"
+              alt="logo of Valpommerce"
+              title="logo of Valpommerce"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+            <span>VALPOMMERCE</span>
+          </a>
+          <ul>
+            <li>Calle Ficticia 123, Valpara&iacute;so, Chile</li>
+            <li><a href="mailto:info@example.cl">info@valpommerce.org</a></li>
+            <li><a href="tel:+56942135555">(+56) 9 4213-5555</a></li>
+          </ul>
+        </div>
+        <div class="social-networks"></div>
+        <div class="copyright-wrapper">
+          <p class="copyright-text">
+            WDD231 Class Project - Julian A. Cuervo 🚀 <br />
+            &copy;&nbsp;
+            <span id="currentYear"></span>
+            - Valpommerce
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

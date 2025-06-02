@@ -1,0 +1,188 @@
+/* Laptops */
+@media screen and (min-width: 1024px) {
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 1rem;
+  }
+
+  /* Header logo */
+  header .header-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .header-top a {
+    font-size: 2rem;
+  }
+
+  header .header-top a img {
+    width: 50px;
+    height: auto;
+  }
+
+  header .header-top .hamburger-wrapper {
+    display: none;
+  }
+
+  /* Header navigation */
+  header .header-nav {
+    position: relative;
+    min-height: initial;
+    width: initial;
+    box-shadow: none;
+    border: none;
+    transform: translateX(0);
+  }
+
+  header .header-nav .navigation-head {
+    display: none;
+  }
+
+  header .header-nav .navigation-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .header-nav .navigation-body a {
+    font-size: 1.2rem;
+    width: inherit;
+    margin: 0px 2rem;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+  }
+
+  header .header-nav .navigation-body a:hover {
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  footer .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  footer .contact-wrapper .logo-footer img {
+    width: 50px;
+  }
+
+  footer .contact-wrapper ul {
+    flex-grow: 0;
+    padding: 1rem;
+  }
+
+  footer .contact-wrapper ul li {
+    font-size: 1.2rem;
+  }
+
+  footer .copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  footer .copyright-wrapper p {
+    text-align: right;
+  }
+
+  footer .copyright-wrapper .copyright-text {
+    background-color: transparent;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1024px;
+    min-height: 90vh;
+    width: 100%;
+    padding: 0;
+    margin: 0px auto;
+    margin-top: 110px;
+  }
+
+  .business-list table {
+    font-size: 1.2rem;
+  }
+
+  /* Home */
+  h1.main-heading {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  /* Spotlight */
+  .spotlight > .business-cards > .business-card:last-child {
+    display: block;
+  }
+
+  .spotlight > h2 {
+    font-size: 2rem;
+  }
+
+  .spotlight > h2::after {
+    content: "💫";
+  }
+
+  .spotlight > p {
+    font-size: 1.5rem;
+  }
+
+  /* Weather */
+  .weather-home {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 3fr repeat(2, 2fr);
+  }
+
+  .weather-home h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content .hero-title {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+
+  .weather-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .weather-header span {
+    flex: 1;
+    align-self: flex-end;
+  }
+  .weather-header .icon-weather {
+    flex: 1;
+  }
+
+  .weather-header p {
+    flex: 1;
+    text-align: center;
+  }
+}
