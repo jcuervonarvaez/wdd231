@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="./styles/larger.css" />
     <!-- Scripts -->
     <script type="module" src="./scripts/shared.mjs"></script>
+    <script type="module" src="./scripts/home.mjs"></script>
   </head>
   <body>
     <div class="layout">
@@ -80,14 +81,60 @@
         </nav>
       </header>
       <main>
-        <section class="hero"></section>
-        <h2>Home</h2>
+        <section class="hero">
+          <div class="hero-overlay"></div>
+          <picture>
+            <!-- Desktop: 1440px o más -->
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/banner-home-large.webp"
+            />
 
-        <section>
-          <h3>subtitle</h3>
+            <!-- Tablet: desde 768px hasta 1439px -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/banner-home-medium.webp"
+            />
+
+            <!-- Móvil: menos de 768px -->
+            <img src="./images/banner-home-small.webp" alt="Banner principal" />
+          </picture>
+          <div class="hero-content">
+            <h2>
+              Empowering small businesses in Valparaiso through community and
+              digital tools.
+            </h2>
+            <p>
+              Valpommerce helps local shops, artisans, and entrepreneurs connect
+              with new customers and each other. Join our growing network to
+              access training, promote your business online, and take part in
+              events that strengthen the local economy.
+            </p>
+            <a href="./join.html">Join Now</a>
+          </div>
         </section>
         <section>
-          <h3>subtitle</h3>
+          <h2>Incoming Events</h2>
+        </section>
+        <section>
+          <h2>Current Weather</h2>
+        </section>
+        <section>
+          <h2>Weather Forecast</h2>
+        </section>
+        <section class="spotlight">
+          <div class="spotlight-background"></div>
+          <div class="spotlight-content">
+            <h2>Spotlight on Local Talent</h2>
+            <p>
+              Celebrating Valparaíso’s Small Businesses, Artisans & Creators
+            </p>
+            <div id="business-cards" class="business-cards">
+              <div class="business-card"></div>
+              <div class="business-card"></div>
+              <div class="business-card"></div>
+            </div>
+          </div>
         </section>
       </main>
       <footer>

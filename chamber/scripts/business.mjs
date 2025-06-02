@@ -1,3 +1,41 @@
+// URL to fetch business data
+export async function fetchBusiness() {
+  const url =
+    "https://jcuervonarvaez.github.io/wdd231/chamber/scripts/members.json";
+  try {
+    const response = await fetch(url, { method: "get" });
+    const business = await response.json();
+    return business;
+  } catch (error) {
+    alert("Error on API Request");
+    console.error(error.message);
+    return [];
+  }
+}
+
+/**
+ * Fetches a random selection of VIP businesses (membership levels 2 and 3).
+ * @param {number} limit - The maximum number of businesses to return.
+ * @return {Promise<Array>} - A promise that resolves to an array of random VIP businesses.
+ */
+
+export async function getRandomVIPBusiness(limit = 3) {
+  const businesses = await fetchBusiness();
+  if (businesses.length === 0) {
+    return [];
+  }
+  const vipBusinesses = businesses.filter((business) =>
+    ["2", "3"].includes(business.membership_level)
+  );
+  const shuffled = vipBusinesses.sort(() => 0.5 - Math.random());
+  // Limit the number of businesses to the specified limit
+  if (shuffled.length <= limit) {
+    return shuffled;
+  }
+  const randomThree = shuffled.slice(0, limit);
+  return randomThree;
+}
+
 /**
  * Generates a business card for the given business.
  * @param {Object} business - The business object containing details like name, address, and contact information.

@@ -1,5 +1,4 @@
-import { getRandomVIPBusiness } from "./business-api.mjs";
-import { getBusinessCard } from "./business-components.mjs";
+import { getBusinessCard, getRandomVIPBusiness } from "./business.mjs";
 
 async function getSpotlightBusinessHTML(parentElement) {
   const randomBusiness = await getRandomVIPBusiness(3);

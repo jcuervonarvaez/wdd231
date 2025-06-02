@@ -79,4 +79,39 @@
   .footer-branding p {
     margin: 0;
   }
+
+  .hero-content {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .spotlight-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .spotlight-content h2 {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  .spotlight-content p {
+    font-size: 1.2rem;
+  }
+
+  .spotlight .business-cards > .business-card:last-child {
+    display: initial
+  }
 }
