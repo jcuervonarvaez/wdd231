@@ -22,4 +22,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const businessCardsContiner = document.getElementById("business-cards");
   await getSpotlightBusinessHTML(businessCardsContiner);
+
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("siteHeader");
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
 });

@@ -327,7 +327,7 @@ footer .copyright {
 }
 
 .spotlight-content h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--secondary-color);
   margin-bottom: 1rem;
@@ -339,7 +339,7 @@ footer .copyright {
   font-size: 1rem;
   font-style: italic;
   color: var(--black-color);
-  text-align: justify;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -708,8 +708,11 @@ footer .copyright {
   font-weight: 700;
 }
 
-.directory-title
-{
+.content-directory {
+  padding: 2rem 0;
+}
+
+.directory-title {
   text-align: center;
   margin: 2rem 0;
   color: var(--secondary-color);
