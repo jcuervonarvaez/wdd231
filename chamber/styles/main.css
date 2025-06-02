@@ -712,7 +712,7 @@ footer .copyright {
   padding: 2rem 0;
 }
 
-.directory-title {
+.content-directory h1 {
   text-align: center;
   margin: 2rem 0;
   color: var(--secondary-color);
