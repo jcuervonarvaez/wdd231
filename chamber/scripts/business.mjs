@@ -107,7 +107,7 @@ async function getBodyBusinessCard(image, name, category, address, phone) {
   let businessCardBodyElement = document.createElement("div");
   let businessCardProfileElement = document.createElement("div");
   let businessCardProfileImgElement = document.createElement("img");
-  let businessCardProfileH2Element = document.createElement("h2");
+  let businessCardProfileH2Element = document.createElement("h3");
   let businessCardProfilePElement = document.createElement("p");
   let businessCardContactInfoElement = document.createElement("div");
   let businessCardContactInfoUlElement = document.createElement("ul");
@@ -121,7 +121,8 @@ async function getBodyBusinessCard(image, name, category, address, phone) {
   businessCardProfileImgElement.setAttribute("alt", `Logo of ${name}`);
   businessCardProfileImgElement.setAttribute("title", `Logo of ${name}`);
   addressElement.textContent = address;
-  phoneElement.textContent = phone;
+  let dialgingCode = phone.replace(/\D/g, ""); // Remove non-digit characters for the tel link
+  phoneElement.innerHTML = `<b>Phone: </b> <a class="info-business" href="tel:${dialgingCode}">${phone}</a>`;
 
   businessCardProfileElement.appendChild(businessCardProfileImgElement);
   businessCardProfileElement.appendChild(businessCardProfileH2Element);

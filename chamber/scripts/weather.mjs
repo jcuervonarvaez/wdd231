@@ -72,7 +72,7 @@ function createWeatherInfoListItem(title, data) {
   return li;
 }
 
-async function displayWeather(container) {
+export async function displayWeather(container) {
   const weatherData = await getWeather();
 
   const temperature = weatherData.main.temp;
@@ -121,7 +121,7 @@ async function displayWeather(container) {
   container.appendChild(ul);
 }
 
-async function displayForecast(container) {
+export async function displayForecast(container) {
   const forecast = await getForecast();
   if (!forecast || !forecast.list || forecast.list.length === 0) {
     console.error("No forecast data available");
@@ -143,11 +143,3 @@ async function displayForecast(container) {
   });
   container.appendChild(ul);
 }
-
-document.addEventListener("DOMContentLoaded", async () => {
-  const weatherElement = document.getElementById("weather-info-list");
-  const forecastElement = document.getElementById("forecast-info-list");
-
-  displayWeather(weatherElement);
-  displayForecast(forecastElement);
-});
