@@ -174,7 +174,27 @@
     font-size: 2.5rem;
   }
 
+  .content-directory > p {
+    padding: 0 6rem;
+  }
+
   .breadcrumb ul {
     justify-content: start;
+  }
+
+  .joinSection {
+    display: flex;
+    flex-direction: row;
+  }
+  .joinSection .levelsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .joinForm {
+    max-width: 600px;
   }
 }

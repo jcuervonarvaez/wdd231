@@ -87,7 +87,135 @@
               <li class="active" aria-current="page">Join</li>
             </ul>
           </nav>
-          <h1>Join</h1>
+          <h1>Join Us</h1>
+          <p>
+            Become part of Valpommerce and help grow Valparaíso’s local economy.
+            Connect with fellow entrepreneurs, showcase your business, and be
+            part of a thriving community.
+          </p>
+
+          <section class="joinSection">
+            <div class="levelsContainer">assd</div>
+            <form action="./thankyou.html" method="get" class="joinForm">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                  <label for="firstNameField">First Name</label>
+                  <input
+                    id="firstNameField"
+                    name="firstname"
+                    title="First name is required."
+                    autocomplete="given-name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastNameField">Last Name</label>
+                  <input
+                    id="lastNameField"
+                    name="lastname"
+                    title="Last name is required."
+                    autocomplete="family-name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="emailField">Email</label>
+                  <input
+                    id="emailField"
+                    name="email"
+                    title="Email is required and must be a valid format."
+                    autocomplete="email"
+                    placeholder="example@mail.com"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mobileField">Cell Phone</label>
+                  <input
+                    id="mobileField"
+                    name="mobile-phone-number"
+                    title="Phone number is required and must be a valid format."
+                    autocomplete="tel"
+                    type="tel"
+                    required
+                  />
+                </div>
+                <p>
+                  This information will be used to contact you and manage your
+                  membership.
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Organization Information</legend>
+                <div class="form-group">
+                  <label for="organizationNameField">Organization Name</label>
+                  <input
+                    id="organizationNameField"
+                    name="organization-name"
+                    title="Organization name is required."
+                    autocomplete="organization"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="organizationTitleField"
+                    >Organizational Title</label
+                  >
+                  <input
+                    id="organizationTitleField"
+                    name="organization-title"
+                    title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."
+                    autocomplete="organization-title"
+                    pattern="^[A-Za-z\- ]{7,}$"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="membership-level">Membership Level</label>
+                  <select
+                    id="membership-level"
+                    name="membership_level"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select your membership level
+                    </option>
+                    <option value="np">
+                      NP Membership (Non-profit, no fee)
+                    </option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="descriptionField">Business Description</label>
+                  <textarea
+                    id="descriptionField"
+                    name="description"
+                    title="Business description is required."
+                    placeholder="Describe your business."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <p>
+                  This information will be used to create your business profile
+                  and connect you with the community.
+                </p>
+              </fieldset>
+              <div class="form-group">
+                <input type="hidden" name="timestamp" />
+                <button type="submit" id="sendFormJoin">Submit</button>
+              </div>
+            </form>
+          </section>
         </div>
       </main>
       <footer>

@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --black-color: #0a0803;
   --accent-color: #bd2c49;
+  --green-color: #A4B01A;
 
   --header-height: 60px;
 }
@@ -719,3 +720,162 @@ footer .copyright {
   shape-margin: 0.5rem;
   font-size: 2rem;
 }
+
+.content-directory h1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0.5rem auto;
+}
+
+.content-directory > p{
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+/* Join Page */
+.joinSection{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.joinForm {
+  padding: 2rem 1rem;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  margin: 1rem;
+  box-shadow: 2px 0px 10px rgba(26, 105, 177, 0.3);
+}
+
+.joinForm fieldset {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.joinForm fieldset legend {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black-color);
+  text-align: center;
+}
+
+.joinForm fieldset p {
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: rgba(26, 105, 177, 0.2);
+  color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.joinForm fieldset p::before {
+  content: "ℹ️";
+  color: var(--accent-color);
+}
+
+.joinForm .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.joinForm .form-group > label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.joinForm .form-group input,
+.joinForm .form-group select,
+.joinForm .form-group textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.joinForm .form-group input.invalid,
+.joinForm .form-group select.invalid,
+.joinForm .form-group textarea.invalid {
+  border-color: var(--accent-color);
+  background-color: rgba(189, 44, 73, 0.2);
+}
+
+.joinForm .form-group textarea{
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+}
+
+.joinForm button {
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  color: white;
+  background: #1a69b1;
+  background: linear-gradient(
+    90deg,
+    rgba(26, 105, 177, 1) 0%,
+    rgba(23, 50, 119, 1) 100%
+  );
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+
+}
+
+
+/* .joinSection{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.levelsContainer{
+  flex: 1;
+}
+
+#joinForm{
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  box-shadow: 2px 0px 10px rgba(26, 105, 177, 0.3);
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--white-color);s
+  color: var(--black-color);
+}
+
+
