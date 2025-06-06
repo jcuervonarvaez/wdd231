@@ -782,7 +782,6 @@ footer .copyright {
   height: auto;
   object-fit: cover;
   object-position: center;
-  
 }
 
 .join-form {
@@ -927,6 +926,12 @@ footer .copyright {
   );
   color: var(--white-color);
   box-shadow: 2px 0px 10px rgba(26, 105, 177, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plans .level-card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 6px 20px rgba(26, 105, 177, 0.4);
 }
 
 .plans .level-card > p {
@@ -1046,4 +1051,101 @@ footer .copyright {
   font-size: 1.2rem;
   font-weight: 300;
   text-align: justify;
+}
+
+dialog:open {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+dialog h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 2rem 0;
+}
+
+dialog p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--black-color);
+}
+
+dialog ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+dialog ul li {
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+}
+
+dialog ul li::before {
+  content: "✓";
+  color: var(--green-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 10px;
+}
+
+dialog .close-modal {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+dialog .close-modal:hover,
+dialog .close-modal:active {
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#submission-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 0px 10px rgba(26, 105, 177, 0.3);
+}
+#submission-data p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--black-color);
+  margin: 0;
+}
+#submission-data p strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
 }

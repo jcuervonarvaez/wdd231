@@ -224,7 +224,7 @@
     justify-content: space-between;
   }
 
-  .plans .level-card button {
+  .plans .level-card > button {
     background: #1a69b1;
     background: linear-gradient(
       90deg,
@@ -235,7 +235,7 @@
     border: 3px solid var(--white-color);
     border-radius: 10px;
   }
-  .plans .level-card button:hover {
+  .plans .level-card > button:hover {
     background: var(--white-color);
     color: var(--secondary-color);
     border: 3px solid var(--secondary-color);
@@ -257,5 +257,9 @@
     font-size: 1.2rem;
     font-weight: 300;
     text-align: justify;
+  }
+
+  #submission-data {
+    margin: 0 auto;
   }
 }
