@@ -190,7 +190,7 @@
     overflow: hidden;
     border-radius: 20px;
   }
-  .join-form-section > img {
+  .join-form-section > picture img {
     position: absolute;
     z-index: 1;
     grid-row: 1 / 2;

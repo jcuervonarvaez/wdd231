@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="./styles/larger.css" />
     <!-- Scripts -->
     <script type="module" src="./scripts/shared.mjs"></script>
+    <script type="module" src="./scripts/join.mjs"></script>
   </head>
   <body>
     <div class="layout">
@@ -96,7 +97,7 @@
           <section class="plans">
             <div class="membership-levels">
               <h2>
-                Membership Levels <br>
+                Membership Levels <br />
                 <span class="subtitle"
                   >Choose the level that best suits your business needs.</span
                 >
@@ -150,8 +151,23 @@
             </div>
           </section>
           <section class="join-form-section">
-            <img src="./images/owners-business.png" alt="" />
-            <form action="./thankyou.html" method="get" class="join-form">
+            <picture>
+              <source
+                srcset="./images/owners-valpommerce-large.webp"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="./images/owners-valpommerce-medium.webp"
+                media="(min-width: 600px)"
+              />
+              <img
+                src="./images/owners-valpommerce-small.webp"
+                alt="Four local Chilean entrepreneurs from Valparaíso"
+                title="Four local Chilean entrepreneurs from Valparaíso"
+                loading="lazy"
+              />
+            </picture>
+            <form action="./thankyou.html" method="get" class="join-form" id="join-form">
               <h2>
                 Join Valpommerce Today!
                 <span class="form-subtitle"
@@ -264,7 +280,7 @@
                 </div>
               </fieldset>
               <div class="form-group">
-                <input type="hidden" name="timestamp" />
+                <input type="hidden" name="timestamp" id="timestamp-input" />
                 <button type="submit" id="sendFormJoin">Join Now</button>
               </div>
             </form>
