@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (event) => {
       const modalId = event.target.getAttribute("data-modal-id");
       const modal = document.getElementById(modalId);
+      modal.classList.add("open");
       modal.showModal();
     });
   });
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener("click", (event) => {
         const modal = event.target.closest("dialog");
         if (modal) {
+          modal.classList.remove("open");
           modal.close();
         }
       });
