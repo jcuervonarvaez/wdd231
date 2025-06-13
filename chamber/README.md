@@ -23,7 +23,6 @@ Small local shops, new artisans and creative businesses in Valparaíso looking f
 
 ### **User Personas:**
 #### Small Business Owner
-Pedro is a 72-year-old shoemaker who has run his small local repair shop in Valparaíso for over 50 years. His business is known for its high-quality work and loyal customer base, all built through word of mouth. Although he has heard that promoting his services online could bring in more clients, he has no experience with digital tools and feels overwhelmed by technology. Pedro wants to adapt to the modern world but needs simple, clear guidance to get started without changing the essence of his traditional craft.
 
 #### Young owner of a small business.
 Benja is a 22-year-old university student at the Universidad Técnica Federico Santa María. To help pay for his education, he runs a small art business where he sells custom paintings, caricatures, and realistic drawings. Although talented, Benja struggles to reach a broader audience and connect with people interested in his work. He is eager to improve his business and join a community of young entrepreneurs, but lacks the network and knowledge to promote his services effectively online.

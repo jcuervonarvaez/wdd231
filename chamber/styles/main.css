@@ -1149,3 +1149,24 @@ dialog .close-modal:active {
   font-weight: 700;
   color: var(--secondary-color);
 }
+
+/* Discover */
+.discover-description {
+  font-weight: 300;
+}
+.cards-discover {
+  border: 1px solid var(--secondary-color);
+}
+
+.cards-discover .card-place {
+  margin: 1rem 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    ""
+    ""
+    ""
+    "";
+}
