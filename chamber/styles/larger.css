@@ -262,4 +262,26 @@
   #submission-data {
     margin: 0 auto;
   }
+
+  .cards-discover {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-discover .card-place{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas:
+      "name"
+      "photograph"
+      "address"
+      "description"
+      "cost"
+      "link";
+  }
+
+  .cards-discover .card-place picture{
+    height: 250px;
+  }
 }

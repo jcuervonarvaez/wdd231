@@ -1,98 +1,92 @@
 [
   {
     "name": "La Sebastiana",
-    "address": "Ricardo De Ferrari 692 2381661 Valparaíso Región De Valparaíso",
-    "cost": "General admission: $10,000 CLP – Discounted admission: $4,000 CLP (students and seniors).",
-    "description": "La Sebastiana is the colorful hilltop home of Nobel poet Pablo Neruda, now a museum offering panoramic views of the city and bay. It houses Neruda’s eclectic collections of maritime art, old maps and curiosities, making it a “must-see” for visitors. The quirky architecture and decor (naval maps, a carved wooden horse, etc.) reflect the poet’s life and taste.",
+    "address": "Ricardo De Ferrari 692, Valparaíso, Chile",
+    "cost": "General: $10,000 CLP, Students/Seniors: $4,000 CLP",
+    "description": "La Sebastiana was the home of Chilean Nobel Prize-winning poet Pablo Neruda. Today, it's a museum where visitors can explore its colorful rooms, discover eccentric artifacts, and enjoy panoramic views of the city and sea.",
     "photo_sources": [
-      "https://i0.wp.com/fundacionneruda.org/wp-content/uploads/2024/04/cultura-fundacion-pablo-neruda-la-sebastiana.png?resize=768%2C768&ssl=1",
-      "https://i0.wp.com/fundacionneruda.org/wp-content/uploads/2024/04/cultura-fundacion-pablo-neruda-la-sebastiana.png?resize=768%2C768&ssl=1",
-      "https://i0.wp.com/fundacionneruda.org/wp-content/uploads/2024/04/cultura-fundacion-pablo-neruda-la-sebastiana.png?resize=768%2C768&ssl=1"
+      "https://fundacionneruda.org/wp-content/uploads/2018/06/la-sebastiana.jpg"
     ],
     "url": "https://fundacionneruda.org/museos-casa-museo-la-sebastiana/"
   },
   {
-    "name": "Palacio Baburizza (Museo de Bellas Artes)",
-    "address": "Paseo Yugoslavo 176, Cerro Alegre, Valparaíso",
-    "cost": "General: CLP 3 000",
-    "description": "The Palacio Baburizza is an opulent 1916 villa turned art museum on Cerro Alegre. It contains a large collection of 19th–20th century European and Chilean paintings (portraits, landscapes, still-lives) and is considered “one of the most important public collections in the country”. The pink-and-white Art Deco mansion itself is a cultural landmark, set in picturesque gardens.",
-    "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Palacio_Baburizza.jpg",
-      "https://museobaburizza.cl/wp-content/uploads/2019/06/portada-museo-1024x683.jpg",
-      "https://valparaiso.com/en/tourist-attraction/baburizza-palace/palacio-baburizza.jpg"
-    ],
-    "url": "https://museobaburizza.cl/en/home/"
-  },
-  {
-    "name": "Ascensores de Valparaíso (Funiculares)",
-    "address": "Varias localizaciones (p.ej. Ascensor Concepción, Cordillera, Espíritu Santo)",
-    "cost": "CLP 100–300 por viaje",
-    "description": "Históricos «ascensores» (funiculares) de finales del s. XIX–XX, conectan el centro con los cerros y ofrecen vistas únicas.",
-    "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ascensor_Concepcion_Valparaiso.jpg",
-      "https://valparaiso.com/en/what-to-visit-in-valparaiso/elevators/concepcion-elevator.jpg",
-      "https://ymtram.mashke.org/chile/valparaiso/ascensor.jpg"
-    ],
-    "url": "https://valparaiso.com/en/what-to-visit-in-valparaiso/elevators/"
-  },
-  {
-    "name": "Plaza Sotomayor",
-    "address": "Plaza Sotomayor, Centro Histórico, Valparaíso",
+    "name": "Open Air Museum",
+    "address": "Cerro Bellavista, Valparaíso, Chile",
     "cost": "Free",
-    "description": "Plaza cívica principal, rodeada de edificios históricos y el Monumento a los Héroes de Iquique.",
+    "description": "Located in Bellavista Hill, this open-air museum features a collection of murals painted by renowned Chilean artists. It offers a unique cultural walk through colorful streets filled with history and urban art.",
     "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Plaza_Sotomayor_Valparaiso.jpg",
-      "https://valparaiso.com/en/tourist-attraction/sotomayor-square/sotomayor-square.jpg",
-      "https://lonelyplanet.com/ph/valparaiso/plaza-sotomayor.jpg"
+      "https://www.chileestuyo.cl/wp-content/uploads/2019/04/Museo-a-cielo-abierto-Valparaiso-@sashax.jpg"
     ],
-    "url": "https://en.wikipedia.org/wiki/Plaza_Sotomayor"
+    "url": "https://valparaiso.com/tourist-attraction/museo-a-cielo-abierto/"
   },
   {
-    "name": "Mercado El Cardonal",
-    "address": "Calle Uruguay 125, Valparaíso",
-    "cost": "Free (comida según consumo)",
-    "description": "Mercado de frutas, verduras y mariscos en estructura metálica de 1912; el segundo piso alberga restaurantes de comida típica.",
+    "name": "Artillería Funicular",
+    "address": "Calle Artillería, Valparaíso, Chile",
+    "cost": "$100 - $300 CLP",
+    "description": "One of Valparaíso’s oldest and most iconic funiculars. It connects the lower part of the city with Artillería Hill and the 21 de Mayo Promenade, offering breathtaking views of the bay and port.",
     "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Mercado_Cardonal_Valparaiso.jpg",
-      "https://lonelyplanet.com/chile/valparaiso/mercado-cardonal.jpg",
-      "https://centurion-magazine.com/wp-content/uploads/mercado-cardonal.jpg"
+      "https://www.welcomechile.com/valparaiso/fotos/valparaiso-ascensores-2873.jpg"
     ],
-    "url": "https://es.wikipedia.org/wiki/Mercado_El_Cardonal"
+    "url": "https://www.welcomechile.com/valparaiso/ascensor-artilleria.html"
   },
   {
-    "name": "Museo a Cielo Abierto",
-    "address": "Cerro Bellavista, Valparaíso",
+    "name": "Reñaca Beach",
+    "address": "Reñaca, Viña del Mar, Chile",
     "cost": "Free",
-    "description": "Museo urbano al aire libre con ~20 murales de artistas chilenos e internacionales en las calles del cerro.",
+    "description": "Located north of Viña del Mar, Reñaca Beach is one of the most popular summer spots. It's ideal for sunbathing, surfing, and enjoying the lively beachside promenade with restaurants and bars.",
     "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/8/8b/Museo_a_Cielo_Abierto_Valparaiso.jpg",
-      "https://valparaiso.com/tourist-attraction/museo-a-cielo-abierto/museo-a-cielo-abierto.jpg",
-      "https://evendo.com/sites/default/files/museo-a-cielo-abierto.jpg"
+      "https://chile.travel/wp-content/uploads/2020/12/Playas-Renaca.jpg"
     ],
-    "url": "https://es.wikipedia.org/wiki/Museo_a_Cielo_Abierto_de_Valpara%C3%ADso"
+    "url": "https://chile.travel/en/where-to-go/central-zone/vina-del-mar/"
   },
   {
-    "name": "Cerro Alegre y Cerro Concepción",
-    "address": "Cerro Alegre & Cerro Concepción, Valparaíso",
+    "name": "Wulff Castle",
+    "address": "Av. Marina 37, Viña del Mar, Chile",
     "cost": "Free",
-    "description": "Barrios históricos con casas coloridas, cafés, galerías, arte urbano y miradores panorámicos sobre la bahía.",
+    "description": "This German-style castle was built in the early 20th century by businessman Gustavo Wulff. Set dramatically on the rocks by the sea, it hosts art exhibitions and provides stunning ocean views.",
     "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cerro_Alegre_Valparaiso.jpg",
-      "https://valparaiso.com/en/tourist-attraction/cerro-alegre/cerro-alegre.jpg",
-      "https://evendo.com/sites/default/files/cerro-alegre.jpg"
+      "https://www.vinadelmarchile.cl/wp-content/uploads/2020/10/castillo-wulff-vina.jpg"
     ],
-    "url": "https://valparaiso.com/en/tourist-attraction/cerro-alegre-2-2/"
+    "url": "https://www.vinadelmarchile.cl/castillo-wulff/"
   },
   {
-    "name": "Parque Cultural de Valparaíso",
-    "address": "Calle Cárcel 471, Cerro Cárcel, Valparaíso",
-    "cost": "Free (eventos pueden tener costo)",
-    "description": "Centro cultural en antigua cárcel, con salas de exposición, teatro, talleres y vistas sobre la ciudad y el puerto.",
+    "name": "National Botanical Garden",
+    "address": "Camino El Olivar 305, Viña del Mar, Chile",
+    "cost": "General: $2,800 CLP, Children/Seniors: $1,000 CLP",
+    "description": "Home to over 3,000 plant species, this botanical garden is a natural oasis perfect for hiking, picnicking, and learning about native and exotic flora. It also includes nurseries, ponds, and themed areas.",
     "photo_sources": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/1b/Exterior_Parque_Cultural_de_Valpara%C3%ADso.jpg",
-      "https://parquecultural.cl/wp-content/uploads/2021/08/Parque-Cultural-de-Valparaiso-PCdV-1.jpg",
-      "https://evendo.com/sites/default/files/parque-cultural.jpg"
+      "https://www.jardin-botanico.cl/wp-content/uploads/2020/11/jardin_botanico_vina_del_mar.jpg"
     ],
-    "url": "https://parquecultural.cl/"
+    "url": "https://www.jardin-botanico.cl/"
+  },
+  {
+    "name": "Fonck Museum",
+    "address": "4 Norte 784, Viña del Mar, Chile",
+    "cost": "General: $3,000 CLP, Students: $500 CLP",
+    "description": "An archaeological and ethnographic museum known for its impressive collection of Rapa Nui artifacts and natural history exhibits, including insects, fossils, and reptiles.",
+    "photo_sources": [
+      "https://www.museofonck.cl/wp-content/uploads/2016/11/IMG_3475.jpg"
+    ],
+    "url": "https://www.museofonck.cl/"
+  },
+  {
+    "name": "Concepción Hill",
+    "address": "Cerro Concepción, Valparaíso, Chile",
+    "cost": "Free",
+    "description": "A historic and vibrant hill filled with colonial architecture, street art, cafés, and scenic viewpoints. It's a perfect place to explore on foot and experience the city's bohemian charm.",
+    "photo_sources": [
+      "https://www.chileestuyo.cl/wp-content/uploads/2019/04/Cerro-Concepcion-Valparaiso-@chiletravel.jpg"
+    ],
+    "url": "https://www.chile.travel/en/where-to-go/central-zone/valparaiso/"
+  },
+  {
+    "name": "Flower Clock",
+    "address": "Caleta Abarca, Viña del Mar, Chile",
+    "cost": "Free",
+    "description": "This iconic floral clock, inaugurated in 1962, is a working timepiece surrounded by colorful seasonal flowers. It’s one of Viña del Mar’s most photographed landmarks.",
+    "photo_sources": [
+      "https://www.vinadelmarchile.cl/wp-content/uploads/2020/10/reloj-de-flores.jpg"
+    ],
+    "url": "https://www.vinadelmarchile.cl/reloj-de-flores/"
   }
 ]

@@ -1,0 +1,25 @@
+/* For Tablets */
+@media screen and (min-width: 768px) {
+  .cards-discover .card-place {
+    display: grid;
+    grid-template-areas:
+      "photograph name"
+      "photograph address"
+      "photograph description"
+      "photograph cost"
+      "photograph link";
+  }
+
+  .cards-discover .card-place picture {
+    height: 100%;
+  }
+
+  .cards-discover .card-place p {
+    align-content: center;
+  }
+
+  .cards-discover .card-place a {
+    padding: 0.5rem;
+    align-content: center;
+  }
+}
