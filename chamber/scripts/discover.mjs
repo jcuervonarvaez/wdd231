@@ -1,3 +1,5 @@
+const LAST_VISIT_KEY = 'lastVisitDate';
+
 async function fetchPlaces() {
   try {
     const response = await fetch("./scripts/places.json");
@@ -71,7 +73,55 @@ function createCard(place) {
   return cardElement;
 }
 
+function getLastVisit() {
+  const storedDate = localStorage.getItem(LAST_VISIT_KEY);
+  return storedDate ? new Date(storedDate) : null;
+}
+
+function saveCurrentVisit() {
+  const now = new Date();
+  localStorage.setItem(LAST_VISIT_KEY, now.toISOString());
+}
+
+function calculateDaysDifference(lastDate, currentDate) {
+  const millisecondsPerDay = 1000 * 60 * 60 * 24;
+  const timeDiff = currentDate - lastDate;
+  return Math.floor(timeDiff / millisecondsPerDay);
+}
+
+function generateVisitMessage(lastVisit) {
+  if (!lastVisit) {
+    return 'Welcome! Let us know if you have any questions.';
+  }
+
+  const now = new Date();
+  const diffDays = calculateDaysDifference(lastVisit, now);
+
+  if (diffDays < 1) {
+    return 'Back so soon! Awesome!';
+  } else if (diffDays === 1) {
+    return 'You last visited 1 day ago.';
+  } else {
+    return `You last visited ${diffDays} days ago.`;
+  }
+}
+
+function displayMessage(message) {
+  const container = document.getElementById('visit-message');
+  if (container) {
+    container.textContent = message;
+  }
+}
+
+function handleVisitTracking() {
+  const lastVisit = getLastVisit();
+  const message = generateVisitMessage(lastVisit);
+  displayMessage(message);
+  saveCurrentVisit();
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
+  handleVisitTracking();
   const cardsContainer = document.getElementById("places-container-cards");
   const places = await fetchPlaces();
   cardsContainer.innerHTML = ""; // Clear existing content

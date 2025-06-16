@@ -1327,3 +1327,11 @@ dialog .close-modal:active {
     background-position: 200% 0;
   }
 }
+
+.visit-message{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
