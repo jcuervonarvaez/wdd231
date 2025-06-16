@@ -4,7 +4,7 @@ import { displayWeather, displayForecast } from "./weather.mjs";
 async function getSpotlightBusinessHTML(parentElement) {
   const randomBusiness = await getRandomVIPBusiness(3);
   // Clear existing Skeletons
-  if (randomBusiness.length > 0) {
+  if (randomBusiness.length> 0) {
     parentElement.innerHTML = "";
     randomBusiness.forEach(async (business) => {
       let card = await getBusinessCard(business);
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   window.addEventListener("scroll", function () {
     const header = document.getElementById("siteHeader");
-    if (window.scrollY > 10) {
+    if (window.scrollY> 10) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");

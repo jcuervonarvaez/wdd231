@@ -34,7 +34,7 @@ function getnext3Days(forecastList) {
   let threeDaysForecast = [];
   for (let i = 0; i < forecastList.length; i += 8) {
     // We only need the next 3 days
-    if (threeDaysForecast.length >= 3) {
+    if (threeDaysForecast.length>= 3) {
       break;
     }
     // Skip the first entry as it is the current weather

@@ -69,7 +69,7 @@ async function createBusinessRow(business) {
 async function getBusiness() {
   const business = await fetchBusiness();
 
-  if (business.length > 0) {
+  if (business.length> 0) {
     // Clear existing Skeletons
     cardsGridElement.innerHTML = "";
     

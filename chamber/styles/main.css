@@ -83,7 +83,7 @@ header {
   gap: 0.5rem;
 }
 
-.header-branding > h1,
+.header-branding> h1,
 a.header-branding {
   font-size: 1.5rem;
   text-decoration: none;
@@ -198,7 +198,7 @@ footer {
   padding: 0;
 }
 
-.footer-top ul > li {
+.footer-top ul> li {
   font-size: 1.2rem;
   font-weight: 400;
   color: var(--white-color);
@@ -206,12 +206,12 @@ footer {
   margin: 0.5rem 0;
 }
 
-.footer-top ul > li a {
+.footer-top ul> li a {
   text-decoration: none;
   color: var(--white-color);
 }
 
-.footer-top ul > li:first-child {
+.footer-top ul> li:first-child {
   font-style: italic;
 }
 
@@ -359,7 +359,7 @@ footer .copyright {
   background-position: center;
 }
 
-.spotlight .business-cards > .business-card:last-child {
+.spotlight .business-cards> .business-card:last-child {
   display: none;
 }
 
@@ -647,7 +647,7 @@ footer .copyright {
   align-items: center;
 }
 
-.wheater-card-content > .weather-info-list {
+.wheater-card-content> .weather-info-list {
   list-style: none;
   padding: 0 2rem 1rem 2rem;
   margin: 0;
@@ -662,7 +662,7 @@ footer .copyright {
   font-size: 1.3rem;
 }
 
-.wheater-card-content .weather-info-list li > span {
+.wheater-card-content .weather-info-list li> span {
   display: block;
   font-style: normal;
   font-weight: 700;
@@ -710,7 +710,7 @@ footer .copyright {
   padding: 0;
 }
 
-.forecast-info-list > li {
+.forecast-info-list> li {
   display: flex;
   font-size: 2rem;
   text-align: justify;
@@ -718,7 +718,7 @@ footer .copyright {
   padding: 0 2rem;
 }
 
-.forecast-info-list > li > span {
+.forecast-info-list> li> span {
   flex: 1;
   font-family: var(--heading-font);
   font-weight: 700;
@@ -788,7 +788,7 @@ footer .copyright {
   margin: 0.5rem auto;
 }
 
-.content-directory > p {
+.content-directory> p {
   text-align: center;
   font-size: 1.2rem;
   color: var(--secondary-color);
@@ -808,7 +808,7 @@ footer .copyright {
     rgba(23, 50, 119, 1) 100%
   );
 }
-.join-form-section > picture img {
+.join-form-section> picture img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -837,12 +837,12 @@ footer .copyright {
   margin-top: 0.5rem;
 }
 
-.join-form > fieldset {
+.join-form> fieldset {
   border: none;
   padding: 0;
 }
 
-.join-form > fieldset > legend {
+.join-form> fieldset> legend {
   font-size: 1.1rem;
   font-weight: 400;
   text-align: center;
@@ -850,7 +850,7 @@ footer .copyright {
   color: var(--secondary-colors);
 }
 
-.join-form > fieldset > legend::after {
+.join-form> fieldset> legend::after {
   content: "";
   display: block;
   width: 50px;
@@ -890,7 +890,7 @@ footer .copyright {
   border: 3px solid var(--secondary-color);
 }
 
-.join-form .form-group > label {
+.join-form .form-group> label {
   color: var(--secondary-color);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -965,7 +965,7 @@ footer .copyright {
   box-shadow: 4px 6px 20px rgba(26, 105, 177, 0.4);
 }
 
-.plans .level-card > p {
+.plans .level-card> p {
   font-size: 1rem;
   font-weight: 400;
   margin: 0.5rem 0;
@@ -1076,7 +1076,7 @@ footer .copyright {
   color: var(--black-color);
 }
 
-.membership-levels > p {
+.membership-levels> p {
   font-family: "Source Sans 3", sans-serif;
   margin-bottom: 2rem;
   font-size: 1.2rem;
