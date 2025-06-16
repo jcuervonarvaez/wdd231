@@ -5,7 +5,9 @@
     "cost": "General: $10,000 CLP, Students/Seniors: $4,000 CLP",
     "description": "La Sebastiana was the home of Chilean Nobel Prize-winning poet Pablo Neruda. Today, it's a museum where visitors can explore its colorful rooms, discover eccentric artifacts, and enjoy panoramic views of the city and sea.",
     "photo_sources": [
-      "https://fundacionneruda.org/wp-content/uploads/2018/06/la-sebastiana.jpg"
+      "./images/places/la_sebastiana_sm.webp",
+      "./images/places/la_sebastiana_md.webp",
+      "./images/places/la_sebastiana_lg.webp"
     ],
     "url": "https://fundacionneruda.org/museos-casa-museo-la-sebastiana/"
   },
@@ -15,7 +17,9 @@
     "cost": "Free",
     "description": "Located in Bellavista Hill, this open-air museum features a collection of murals painted by renowned Chilean artists. It offers a unique cultural walk through colorful streets filled with history and urban art.",
     "photo_sources": [
-      "https://www.chileestuyo.cl/wp-content/uploads/2019/04/Museo-a-cielo-abierto-Valparaiso-@sashax.jpg"
+      "./images/places/open_air_sm.webp",
+      "./images/places/open_air_md.webp",
+      "./images/places/open_air_lg.webp"
     ],
     "url": "https://valparaiso.com/tourist-attraction/museo-a-cielo-abierto/"
   },
@@ -25,9 +29,11 @@
     "cost": "$100 - $300 CLP",
     "description": "One of Valparaíso’s oldest and most iconic funiculars. It connects the lower part of the city with Artillería Hill and the 21 de Mayo Promenade, offering breathtaking views of the bay and port.",
     "photo_sources": [
-      "https://www.welcomechile.com/valparaiso/fotos/valparaiso-ascensores-2873.jpg"
+      "./images/places/funicular_sm.webp",
+      "./images/places/funicular_md.webp",
+      "./images/places/funicular_lg.webp"
     ],
-    "url": "https://www.welcomechile.com/valparaiso/ascensor-artilleria.html"
+    "url": "https://ecomapu.com/funicular-rides-tour/"
   },
   {
     "name": "Reñaca Beach",
@@ -35,9 +41,11 @@
     "cost": "Free",
     "description": "Located north of Viña del Mar, Reñaca Beach is one of the most popular summer spots. It's ideal for sunbathing, surfing, and enjoying the lively beachside promenade with restaurants and bars.",
     "photo_sources": [
-      "https://chile.travel/wp-content/uploads/2020/12/Playas-Renaca.jpg"
+      "./images/places/renaca_sm.webp",
+      "./images/places/renaca_md.webp",
+      "./images/places/renaca_lg.webp"
     ],
-    "url": "https://chile.travel/en/where-to-go/central-zone/vina-del-mar/"
+    "url": "https://www.tripadvisor.cl/Attraction_Review-g295425-d318302-Reviews-Playa_Renaca-Vina_del_Mar_Valparaiso_Region.htmls"
   },
   {
     "name": "Wulff Castle",
@@ -45,9 +53,11 @@
     "cost": "Free",
     "description": "This German-style castle was built in the early 20th century by businessman Gustavo Wulff. Set dramatically on the rocks by the sea, it hosts art exhibitions and provides stunning ocean views.",
     "photo_sources": [
-      "https://www.vinadelmarchile.cl/wp-content/uploads/2020/10/castillo-wulff-vina.jpg"
+      "./images/places/wulff_sm.webp",
+      "./images/places/wulff_md.webp",
+      "./images/places/wulff_lg.webp"
     ],
-    "url": "https://www.vinadelmarchile.cl/castillo-wulff/"
+    "url": "https://www.monumentos.gob.cl/monumentos/monumentos-historicos/castillo-wulff"
   },
   {
     "name": "National Botanical Garden",
@@ -55,9 +65,11 @@
     "cost": "General: $2,800 CLP, Children/Seniors: $1,000 CLP",
     "description": "Home to over 3,000 plant species, this botanical garden is a natural oasis perfect for hiking, picnicking, and learning about native and exotic flora. It also includes nurseries, ponds, and themed areas.",
     "photo_sources": [
-      "https://www.jardin-botanico.cl/wp-content/uploads/2020/11/jardin_botanico_vina_del_mar.jpg"
+      "./images/places/botanical_sm.webp",
+      "./images/places/botanical_md.webp",
+      "./images/places/botanical_lg.webp"
     ],
-    "url": "https://www.jardin-botanico.cl/"
+    "url": "https://gardensearch.bgci.org/garden/3826"
   },
   {
     "name": "Fonck Museum",
@@ -65,9 +77,11 @@
     "cost": "General: $3,000 CLP, Students: $500 CLP",
     "description": "An archaeological and ethnographic museum known for its impressive collection of Rapa Nui artifacts and natural history exhibits, including insects, fossils, and reptiles.",
     "photo_sources": [
-      "https://www.museofonck.cl/wp-content/uploads/2016/11/IMG_3475.jpg"
+      "./images/places/fonck_sm.webp",
+      "./images/places/fonck_md.webp",
+      "./images/places/fonck_lg.webp"
     ],
-    "url": "https://www.museofonck.cl/"
+    "url": "http://museofonck.cl/new_site/"
   },
   {
     "name": "Concepción Hill",
@@ -75,18 +89,10 @@
     "cost": "Free",
     "description": "A historic and vibrant hill filled with colonial architecture, street art, cafés, and scenic viewpoints. It's a perfect place to explore on foot and experience the city's bohemian charm.",
     "photo_sources": [
-      "https://www.chileestuyo.cl/wp-content/uploads/2019/04/Cerro-Concepcion-Valparaiso-@chiletravel.jpg"
+      "./images/places/concepcion_sm.webp",
+      "./images/places/concepcion_md.webp",
+      "./images/places/concepcion_lg.webp"
     ],
-    "url": "https://www.chile.travel/en/where-to-go/central-zone/valparaiso/"
-  },
-  {
-    "name": "Flower Clock",
-    "address": "Caleta Abarca, Viña del Mar, Chile",
-    "cost": "Free",
-    "description": "This iconic floral clock, inaugurated in 1962, is a working timepiece surrounded by colorful seasonal flowers. It’s one of Viña del Mar’s most photographed landmarks.",
-    "photo_sources": [
-      "https://www.vinadelmarchile.cl/wp-content/uploads/2020/10/reloj-de-flores.jpg"
-    ],
-    "url": "https://www.vinadelmarchile.cl/reloj-de-flores/"
+    "url": "https://valparaiso.com/en/tourist-attraction/concepcion-hill/"
   }
 ]

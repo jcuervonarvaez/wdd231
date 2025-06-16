@@ -16,8 +16,8 @@ function createCardImage(photo_sources, name) {
   imgElement.src = photo_sources[0];
   imgElement.alt = name;
   imgElement.loading = "lazy";
-  imgElement.width = "300";
-  imgElement.height = "200";
+  imgElement.width = "800";
+  imgElement.height = "640";
   // Tablet Size
   const sourceTablet = document.createElement("source");
   sourceTablet.media = "(min-width: 600px)";
@@ -74,6 +74,7 @@ function createCard(place) {
 document.addEventListener("DOMContentLoaded", async () => {
   const cardsContainer = document.getElementById("places-container-cards");
   const places = await fetchPlaces();
+  cardsContainer.innerHTML = ""; // Clear existing content
   places.forEach((place) => {
     const card = createCard(place);
     cardsContainer.appendChild(card);

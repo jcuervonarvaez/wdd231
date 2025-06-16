@@ -1192,6 +1192,7 @@ dialog .close-modal:active {
 }
 
 .cards-discover .card-place {
+  min-width: 80vw;
   margin: 1rem 8px;
   border: 1px solid var(--white-color);
   border-radius: 10px;
@@ -1303,4 +1304,26 @@ dialog .close-modal:active {
   content: " ••• ";
   color: var(--accent-color);
   font-weight: 700;
+}
+
+.card-place.skeleton {
+  min-height: 650px;
+  background: #ccc;
+  background: linear-gradient(
+    90deg,
+    #dddddd 0%,
+    #eeeeee 50%,
+    #dddddd 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite linear;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }

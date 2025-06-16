@@ -269,7 +269,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards-discover .card-place{
+  .cards-discover .card-place {
+    min-width: initial;
     min-height: 100%;
     display: grid;
     grid-template-areas:
@@ -281,7 +282,18 @@
       "link";
   }
 
-  .cards-discover .card-place picture{
+  .cards-discover .card-place h2 {
+    align-content: center;
+    margin-top: 2rem;
+  }
+
+  .cards-discover .card-place picture {
     height: 250px;
+  }
+
+  .cards-discover .card-place picture:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
 }
