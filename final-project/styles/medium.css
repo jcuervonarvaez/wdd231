@@ -79,4 +79,12 @@
   .footer-contact-link {
     text-align: start;
   }
+
+  .hero-content {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

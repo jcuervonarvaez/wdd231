@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Toloju</title>
+    <meta name="author" content="Julian A. Cuervo" />
+    <!-- OpenGraphs -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://jcuervonarvaez.github.io/wdd131/final-project/images/toloju-social-media.jpg"
+    />
+    <!-- Twitter X -->
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="./favicon.ico" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +36,12 @@
       <div class="container">
         <!-- Header Logo -->
         <a href="./" class="site-logo">
-          <!-- <img
-            src="./images/logo-light.webp"
+          <img
+            src="./images/logo-icon.webp"
             alt="Toloju Logo"
             width="45"
             height="45"
-          /> -->
+          />
           <span>TOLOJU</span>
         </a>
         <!-- Responsive Bottom Navigation -->
@@ -49,7 +61,7 @@
             Home
           </a>
           <a href="./join.html" class="nav-link">Services</a>
-          <a href="./discover.html" class="nav-link">About Us</a>
+          <a href="./about-us.html" class="nav-link">About Us</a>
           <a href="./directory.html" class="nav-link">Contact</a>
         </nav>
       </div>
@@ -74,120 +86,27 @@
           <img src="./images/banner-home-small.webp" alt="Banner principal" />
         </picture>
         <div class="hero-content">
-          <h2>
-            Empowering small businesses in Valparaiso through community and
-            digital tools.
-          </h2>
+          <h2>Smart Digital Solutions to Grow Your Business</h2>
           <p>
-            Valpommerce helps local shops, artisans, and entrepreneurs connect
-            with new customers and each other. Join our growing network to
-            access training, promote your business online, and take part in
-            events that strengthen the local economy.
+            Toloju empowers growing businesses with professional hosting,
+            seamless domain and website management, and real-time insights
+            through Power BI. Build your online presence with confidence — we
+            handle the technology.
           </p>
-          <a href="./join.html">Join Now</a>
+          <a href="./services.html">Explore Our Services</a>
         </div>
       </section>
-      <section class="weather-home">
-        <div class="wheater-card events-home">
-          <h2>Events</h2>
-          <ul>
-            <li>
-              <h3><span>18th September</span> Independence Day Celebration</h3>
-              <p>
-                Join us on September 18th for a day of festivities, food, and
-                fun at Plaza Sotomayor. Celebrate Chilean culture with live
-                music, traditional dances, and local crafts.
-              </p>
-            </li>
-            <li>
-              <h3>
-                <span>31st December</span> Attend a New Year's Eve celebration
-                in Valparaiso
-              </h3>
-
-              <p>
-                Experience the magic of Valparaiso's New Year's Eve
-                celebrations, where the city comes alive with fireworks, music,
-                and a vibrant atmosphere. Join thousands of locals and visitors
-                as we welcome the new year with joy and excitement.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="wheater-card">
-          <h2>Current Weather</h2>
-          <div id="weather-info-list" class="wheater-card-content"></div>
-        </div>
-        <div class="wheater-card">
-          <h2>Weather Forecast</h2>
-          <div id="forecast-info-list" class="wheater-card-content"></div>
-        </div>
-      </section>
-      <section class="spotlight">
-        <div class="spotlight-background"></div>
-        <div class="spotlight-content">
-          <h2>Spotlight on Local Talent</h2>
-          <p>Celebrating Valparaíso’s Small Businesses, Artisans & Creators</p>
-          <div id="business-cards" class="business-cards">
-            <div class="business-card"></div>
-            <div class="business-card"></div>
-            <div class="business-card"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <main>
-      <h1>HOME</h1>
-      <div class="content">
-        <section class="card course-work">
-          <h2>Course Work</h2>
-          <ul>
-            <li>Week 01 – Introduction, Specificity, Testing</li>
-            <li>Week 02 – Social Media, JSON, Async/Await, Fetch</li>
-            <li>Week 03 – Accessibility, ES Modules, APIs</li>
-            <li>Week 04 – CSS Animations, Modals, Form Design</li>
-            <li>Week 05 – Careers, Profile, Performance</li>
-            <li>Week 06 – Individual Website Project</li>
-            <li>Week 07 – Exam</li>
-          </ul>
-        </section>
-        <section class="card city">
-          <h2>Bogot&aacute;, Colombia</h2>
-          <figure>
-            <img
-              src="images/bogota-plaza.webp"
-              alt="Bogot&aacute;, Colombia, a city with a lot of buildings and green areas."
-              title="Bogot&aacute;, Colombia"
-              width="853"
-              height="853"
-            />
-            <figcaption>Plaza La Santamaría</figcaption>
-          </figure>
-        </section>
-        <section class="card dynamic-courses">
-          <h2>Web and Computer Programing Certificate</h2>
-          <div class="courses-filter">
-            <button class="filter-btn" data-group="ALL">All</button>
-            <button class="filter-btn" data-group="CSE">CSE</button>
-            <button class="filter-btn" data-group="WDD">WDD</button>
-          </div>
-          <p id="total-credits"></p>
-          <div class="course-grid">
-            <ul id="list-courses"></ul>
-          </div>
-        </section>
-      </div>
     </main>
     <footer>
       <div class="container">
         <div class="branding-info">
           <a href="./" class="site-logo">
-            <!-- <img
-            src="./images/logo-light.webp"
-            alt="Toloju Logo"
-            width="45"
-            height="45"
-          /> -->
+            <img
+              src="./images/logo-full-light.webp"
+              alt="Toloju Logo"
+              width="50"
+              height="50"
+            />
             <span>TOLOJU</span>
           </a>
           <p class="description">
@@ -204,10 +123,10 @@
               Valparaíso, Chile</a
             >
             <a class="footer-contact-link" href="mailto:info@example.cl"
-              ><span> ✉ Email: </span>qweqw@valpommerce.org</a
+              ><span> ✉ Email: </span>sales@toloju.org</a
             >
-            <a class="footer-contact-link" href="tel:+56942135555"
-              ><span>☎ Phone: </span>(+56) 9 4213-5555</a
+            <a class="footer-contact-link" href="tel:+56942133093"
+              ><span>☎ Phone: </span>(+56) 9 4213-3093</a
             >
           </nav>
         </div>
