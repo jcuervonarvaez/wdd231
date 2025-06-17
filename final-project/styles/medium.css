@@ -87,4 +87,13 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  .features-section{
+    flex-direction: row;
+    padding: 2rem 3rem;
+  }
+
+  .features-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

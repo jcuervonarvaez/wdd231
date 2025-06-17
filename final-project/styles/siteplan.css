@@ -1,0 +1,148 @@
+/* Reset básico y configuración general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-dark: #0d1b2a;
+  --blue-mid: #1b263b;
+  --blue-light: #415a77;
+  --white: #ffffff;
+  --gray-light: #e0e1dd;
+  --orange: #f4a261;
+  --yellow: #e9c46a;
+
+  --backgroud-main-gradient: linear-gradient(
+    -90deg,
+    rgba(13, 27, 42, 1) 0%,
+    rgba(27, 38, 59, 1) 50%,
+    rgba(65, 90, 119, 1) 100%
+  );
+  --backgroud-seconday-gradient: linear-gradient(
+    90deg,
+    rgba(244, 162, 97, 1) 0%,
+    rgba(233, 196, 106, 1) 100%
+  );
+
+  --pharagraph-font-family: "Noto Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+
+  --border-radius: 0.5rem;
+}
+
+/* Tipografía base */
+body {
+  font-family: var(--pharagraph-font-family);
+  background: var(--blue-mid);
+  color: var(--gray-light);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font-family);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+  background: var(--backgroud-main-gradient);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-wrapper .subtitle {
+  color: var(--yellow);
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: var(--blue-dark);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h3 {
+  color: var(--orange);
+}
+
+section h4 {
+  color: var(--yellow);
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* Cards para User Personas */
+.cards-user-personas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.user-persona {
+  background: var(--blue-light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  border-left: 5px solid var(--orange);
+}
+
+/* Logos */
+.logos-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+/* Typography Samples */
+.typography-example-roboto {
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+}
+
+.typography-example-source-sans {
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--gray-light);
+}
+
+/* Wireframe Images */
+section.wireframes img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  border-top: 2px solid var(--blue-light);
+  color: var(--gray-light);
+  border-radius: var(--border-radius);
+}
