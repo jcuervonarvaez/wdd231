@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Can Toloju manage my domain and hosting?",
+    "answer": "Yes, Toloju offers complete domain and hosting management. We can register, renew, and configure your domains, as well as provide fast and secure hosting on our optimized servers."
+  },
+  {
+    "question": "Do I need technical knowledge to work with Toloju?",
+    "answer": "No technical knowledge is required. We handle all the technical tasks including DNS configuration, SSL certificates, backups, and website maintenance for you."
+  },
+  {
+    "question": "Does Toloju support email accounts with my domain?",
+    "answer": "Yes, we set up professional email addresses using your domain (e.g., yourname@yourdomain.com) and integrate them with Gmail, Outlook, or other clients."
+  },
+  {
+    "question": "Can I host a WordPress or custom website with Toloju?",
+    "answer": "Absolutely. We support WordPress, static websites, and custom web applications. We also assist with installation, optimization, and ongoing maintenance."
+  },
+  {
+    "question": "What kind of analytics or reporting does Toloju offer?",
+    "answer": "We build custom Power BI dashboards to help you track website traffic, user behavior, conversions, and other KPIs in real time, using data from multiple sources like Google Analytics, social media, and CRMs."
+  },
+  {
+    "question": "Can Toloju update my website content regularly?",
+    "answer": "Yes, we offer content update plans where we manage and publish news, images, blog posts, and other changes to keep your website fresh and up to date."
+  }
+]

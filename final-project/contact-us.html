@@ -54,7 +54,8 @@
     <link rel="stylesheet" href="./styles/medium.css" />
     <link rel="stylesheet" href="./styles/larger.css" />
     <!-- Scripts -->
-    <script type="module" src="./scripts/shared.js"></script>
+    <script src="./scripts/shared.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
   </head>
   <body>
     <header>
@@ -84,7 +85,6 @@
         <nav id="main-menu" class="header-navigation" aria-hidden="true">
           <a href="./" class="nav-link"> Home </a>
           <a href="./services.html" class="nav-link">Services</a>
-          <a href="./about-us.html" class="nav-link">About Us</a>
           <a
             href="./contact-us.html"
             class="nav-link nav-link-active"
@@ -95,7 +95,135 @@
       </div>
     </header>
     <main>
-      <h1>Contact Us - Toloju Web Hosting & Domain Support</h1>
+      <div class="content-head">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li class="active" aria-current="page">Contact Us</li>
+          </ul>
+        </nav>
+
+        <h1 class="section-title">Contact Us</h1>
+        <div class="title-underline"></div>
+        <p class="section-description">
+          Have questions about domains, hosting, or web services? Contact Toloju
+          for expert help and fast responses.
+        </p>
+      </div>
+
+      <section class="contact-form-section">
+        <div class="contact-container">
+          <form
+            action="./thankyou.html"
+            method="get"
+            class="contact-form"
+            id="contact-form"
+          >
+            <h2>
+              Get in Touch with Toloju
+              <span class="form-subtitle">
+                Fill out the form below to request a service or ask a question.
+              </span>
+            </h2>
+
+            <fieldset>
+              <legend>Your Information</legend>
+              <div class="form-group">
+                <label for="firstNameField">First Name</label>
+                <input
+                  id="firstNameField"
+                  name="firstname"
+                  type="text"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastNameField">Last Name</label>
+                <input
+                  id="lastNameField"
+                  name="lastname"
+                  type="text"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailField">Email</label>
+                <input
+                  id="emailField"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mobileField">Phone Number</label>
+                <input
+                  id="mobileField"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Service Request</legend>
+              <div class="form-group">
+                <label for="service-select">Select a Service</label>
+                <select id="service-select" name="service" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="web_design">
+                    Website Design & Development
+                  </option>
+                  <option value="hosting">Web Hosting & Maintenance</option>
+                  <option value="domain">Domain & DNS Management</option>
+                  <option value="external_admin">
+                    External Hosting Management
+                  </option>
+                  <option value="power_bi">Power BI Dashboards</option>
+                  <option value="custom">Other / Custom Request</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="descriptionField">Tell us more</label>
+                <textarea
+                  id="descriptionField"
+                  name="message"
+                  rows="5"
+                  placeholder="Describe your needs or ask us a question..."
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <input type="hidden" name="timestamp" id="timestamp-input" />
+              <button type="submit" id="sendFormContact">Send Message</button>
+            </div>
+          </form>
+
+          <picture class="contact-image">
+            <source
+              srcset="./images/business-owners-lg.webp"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="./images/business-owners-md.webp"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="./images/business-owners-sm.webp"
+              alt="Business team from Valparaíso"
+              title="Business team from Valparaíso"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
@@ -163,7 +291,6 @@
           <ul>
             <li><a href="./">Home</a></li>
             <li><a href="./services.html">Services</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
             <li><a href="./contact-us.html">Contact</a></li>
           </ul>
         </div>
