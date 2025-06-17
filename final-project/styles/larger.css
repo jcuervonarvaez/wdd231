@@ -1,0 +1,81 @@
+/* File for large screens */
+@media screen and (min-width: 1200px) {
+  header .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .site-logo span {
+    font-family: var(--heading-font-family);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .header-nav-button {
+    display: none;
+  }
+
+  .header-navigation {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+  }
+
+  .nav-link {
+    flex: initial;
+    margin: 0;
+  }
+
+  /* Footer */
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .footer-bottom {
+    grid-column: 1 / 5;
+  }
+
+  footer .branding-info {
+    grid-column: 1 / 2;
+  }
+
+  footer .social-networks {
+    align-items: start;
+    grid-column: 2 / 3;
+  }
+
+  footer .quick-links {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  footer .contact-info {
+    grid-column: 4 / 5;
+  }
+
+  footer h3 {
+    text-align: start;
+  }
+
+  footer h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--orange);
+    margin: 0.5rem 0;
+  }
+
+  footer .quick-links ul {
+    display: block;
+  }
+
+  footer .quick-links ul li {
+    text-align: start;
+    padding: 0.5rem 0;
+  }
+}
